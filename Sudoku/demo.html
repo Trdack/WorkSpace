@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8" />
+    <title>数组</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+</body>
+<script>
+    var demo = document.getElementById("demo");
+    var arrs = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    var arres = new Array();
+    var arrds = new Array();
+    var arrcs = new Array();
+    var number;
+    for (var i = 0; i < arrs.length; i++) {
+        arres[i] = new Array();
+        arrds[i] = new Array();
+        arrcs[i] = new Array();
+        do {
+            number = Math.floor(Math.random() * 9 + 1);
+        }
+        while (number) {
+            arres[i].push(number);
+            arrds[i].push(number);
+            arrcs[i].push(number);
+            console.log(arres);
+            console.log(arrds);
+            console.log(arrcs);
+        }
+    }
+</script>
+
+</html>

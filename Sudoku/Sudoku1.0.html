@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数独1.0</title>
+    <style>
+        body{margin:0;}
+
+        .index{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            display:grid;
+            grid-template-columns:repeat(9,10vh);
+            grid-template-rows:repeat(9,10vh);
+            grid-gap:0px;
+            border:1px solid #000;
+            background:red;
+            object-fit: cover;
+        }
+
+
+        .divas{
+            grid-column: 3 span;
+            grid-row:3 span;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="index" class="index">
+        <div class="divas"></div>
+        <div class="divas"></div>
+        <div class="divas"></div>
+        <div class="divas"></div>
+        <div class="divas"></div>
+        <div class="divas"></div>
+        <div class="divas"></div>
+        <div class="divas"></div>
+        <div class="divas"></div>
+    </div>
+</body>
+</html>
