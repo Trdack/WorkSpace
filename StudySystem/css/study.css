@@ -1,0 +1,140 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.indexs {
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+
+.displays {
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    height: 100%;
+    border: 1px solid #f00;
+}
+
+.divdown {
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid red;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 30px;
+    color: red;
+    text-align: center;
+}
+
+.blastDisplay {
+    display: none;
+    position: absolute;
+    top: 300px;
+    left: 112.5px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    width: 225px;
+    height: 135px;
+    background: url('./../bgimage/blast.png');
+    background-size: 3375px 135px;
+    animation: moves 0.7s steps(15) infinite;
+}
+
+@keyframes moves {
+    0% {
+        background-position-x: 3375px;
+    }
+
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+
+.GamePanel {
+    position: absolute;
+    top: 50%;
+    left: calc(50% + 500px);
+    transform: translateY(-50%);
+    border: 1px solid red;
+    width: 220px;
+    font-family: "楷体";
+    font-size: 20px;
+}
+
+.GamePanel .diva,
+.GamePanel .divb {
+    position: relative;
+    margin: 5px auto;
+    padding: 0;
+    border: 0;
+    width: 202px;
+    height: 35px;
+    line-height: 35px;
+    background: #333;
+}
+
+
+.GamePanel .divb {
+    height: 60px;
+}
+
+.life {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid #fff;
+    width: 100px;
+    height: 12px;
+    background: #666;
+}
+
+.lifes {
+    width: 60px;
+    height: 12px;
+    background-image: linear-gradient(#960000, red, #960000);
+}
+
+span.spa,
+span.spb {
+    display: inline-block;
+    margin: 0 auto;
+    height: 25px;
+    line-height: 25px;
+}
+
+span.spa {
+    color: rgb(8, 255, 131);
+}
+
+span.spb {
+    color: blue;
+}
+
+.starts {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid #f00;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-family: "楷体";
+    font-size: 25px;
+    color: red;
+    background: transparent;
+    cursor: pointer;
+}

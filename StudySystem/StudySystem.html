@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>键盘练习</title>
+    <script type="text/javascript" defer src="./js/index.js"></script>
+
+</head>
+
+<body>
+    <audio id="audio" src="bgmusic/blast.mp3"></audio>
+    <div id="indexs" class="indexs">
+        <div id="displays" class="displays">
+            <div id="divdown" class="divdown">A</div>
+            <div id="blastDisplay" class="blastDisplay"></div>
+        </div>
+        <div class="GamePanel">
+            <div class="diva">
+                <span class="spa">角&nbsp;&nbsp;色：</span>
+                <span class="spb">悟空</span>
+            </div>
+            <div class="diva">
+                <span class="spa">生命值：</span>
+                <div class="life">
+                    <div id="lifes" class="lifes"></div>
+                </div>
+            </div>
+            <div class="diva">
+                <span class="spa">分&nbsp;&nbsp;数：</span>
+                <span class="spb">1880</span>
+            </div>
+            <div class="diva">
+                <span class="spa">正确率：</span>
+                <span class="spb">30%</span>
+            </div>
+            <div class="diva">
+                <span class="spa">模&nbsp;&nbsp;式：</span>
+                <span class="spb">
+                    <select id="mode" onchange="Sys.classMode.ChangeMode();"></select>
+                </span>
+            </div>
+            <div class="diva">
+                <span class="spa">数&nbsp;&nbsp;量：</span>
+                <span class="spb">
+                    <select id="number" onchange="Sys.classNumber.ChangeNumber();"></select>
+                </span>
+            </div>
+            <div class="diva">
+                <span class="spa">等&nbsp;&nbsp;级：</span>
+                <span class="spb">
+                    <select id="speed" onchange="Sys.classSpeed.ChangeSpeed();"></select>
+                </span>
+            </div>
+            <div class="divb">
+                <div id="starts" class="starts">开始</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
