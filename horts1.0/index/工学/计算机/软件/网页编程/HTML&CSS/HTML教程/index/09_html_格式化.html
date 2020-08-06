@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>HTML_格式化</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8;" />
+	<meta http-equiv="Content-Language" content="zh-CN" />
+	<script type="text/javascript" src="./../js/index.js"></script>
+</head>
+
+<body>
+	<div class="index">
+		<!--顶层-->
+		<div id="inatop" class="inatop"></div>
+		<!--位置-->
+		<div id="loca" class="loca"></div>
+		<!--左边-->
+		<div id="left"></div>
+		<!--中间-->
+		<div class="middle">
+			<!--上下翻页、目录-->
+			<div id="flipa" class="flip"></div>
+			<!--主体-->
+			<div class="subject">
+				<div class="bkc">
+					<h1>HTML文本格式化</h1>
+				</div>
+				<div class="bkc">
+					<p><strong>HTML可定义很多供格式化输出的元素，比如粗体和斜体字。</strong></p>
+					<p><strong>下面很多例子，您可以亲自试试：</strong></p>
+				</div>
+				<div class="bkc">
+					<h2>HTML文本格式化实例</h2>
+				</div>
+				<div class="bkc">
+					<h3>文本格式化</h3>
+					<div class="codes">
+						<p class="p1">&#60;!DOCTYPE html&#62;</p>
+						<p class="p1">&#60;html&#62;</p>
+						<p class="p1">&#60;body&#62;</p>
+						<p class="p2">&#60;b&#62;This text is bold.&#60;b&#62;</p>
+						<p class="p2">&#60;br /&#62;</p>
+						<p class="p2">&#60;strong&#62;This text is strong.&#60;/strong&#62;</p>
+						<p class="p2">&#60;br /&#62;</p>
+						<p class="p2">&#60;big&#62;This text is big.&#60;/big&#62;</p>
+						<p class="p2">&#60;br /&#62;</p>
+						<p class="p2">&#60;em&#62;This text is emphasized.&#60;/em&#62;</p>
+						<p class="p2">&#60;br /&#62;</p>
+						<p class="p2">&#60;i&#62;This text is italic.&#60;/i&#62;</p>
+						<p class="p2">&#60;br /&#62;</p>
+						<p class="p2">&#60;small&#62;This text is small.&#60;/small&#62;</p>
+						<p class="p2">&#60;br /&#62;</p>
+						<p class="p2">This text contains&#60;sub&#62;subscript&#60;/sub&#62;</p>
+						<p class="p2">&#60;br /&#62;</p>
+						<p class="p2">This text contains&#60;sup&#62;superscript&#60;/sup&#62;</p>
+						<p class="p1">&#60;/body&#62;</p>
+						<p class="p1">&#60;/html&#62;</p>
+					</div>
+					<p><strong>注释：</strong>此例演示如何在一个HTML文件中对文本进行格式化。</p>
+				</div>
+				<div class="bkc">
+					<h3>预格式文本</h3>
+					<div class="codes">
+						<p class="p1">&#60;!DOCTYPE html&#62;</p>
+						<p class="p1">&#60;html&#62;</p>
+						<p class="p1">&#60;body&#62;</p>
+						<p class="p1">&#60;pre&#62;</p>
+						<p class="p1">这是</p>
+						<p class="p1">预格式文本。</p>
+						<p class="p1">它保留了&#160;&#160;&#160;&#160;&#160;空格</p>
+						<p class="p1">和换行。</p>
+						<p class="p1">&#60;/par&#62;</p>
+						<p class="p1">&#60;p&#62;pre标签很适合显示计算机代码：</p>
+						<p class="p1">&#60;pre&#62;</p>
+						<p class="p1">for&#160;i&#160;=&#160;1&#160;to&#160;10</p>
+						<p class="p1">&#160;&#160;&#160;&#160;print&#160;1</p>
+						<p class="p1">next&#160;i</p>
+						<p class="p1">&#60;/pre&#62;</p>
+						<p class="p1">&#60;/body&#62;</p>
+						<p class="p1">&#60;/html&#62;</p>
+					</div>
+					<p><strong>注释：</strong>此例演示如何使用pre标签对空行和空格进行控制。</p>
+				</div>
+				<div class="bkc">
+					<h3>“计算机输出”标签</h3>
+					<div class="codes">
+						<p class="p1">&#60;!DOCTYPE html&#62;</p>
+						<p class="p1">&#60;html&#62;</p>
+						<p class="p1">&#60;body&#62;</p>
+						<p class="p2">&#60;code&#62;Computer code&#60;/code&#62;</p>
+						<p class="p2">&#60;br /&#62;</p>
+						<p class="p2">&#60;kbd&#62;Keyboard input&#60;/kbd&#62;</p>
+						<p class="p2">&#60;br /&#62;</p>
+						<p class="p2">&#60;tt&#62;Teletype text&#60;/tt&#62;</p>
+						<p class="p2">&#60;br /&#62;</p>
+						<p class="p2">&#60;samp&#62;Sample text&#60;/samp&#62;</p>
+						<p class="p2">&#60;br /&#62;</p>
+						<p class="p2">&#60;var&#62;Computer variable&#60;/var&#62;</p>
+						<p class="p2">&#60;br /&#62;</p>
+						<p class="p2">&#60;p&#62;&#60;b&#62;注释：&#60;/b&#62;这些标签常用语显示计算机/编程代码。&#60;/p&#62;</p>
+						<p class="p1">&#60;/body&#62;</p>
+						<p class="p1">&#60;/html&#62;</p>
+					</div>
+					<p><strong>注释：</strong>此例演示不同“计算机输出”标签的显示效果。</p>
+				</div>
+				<div class="bkc">
+					<h3>地址</h3>
+					<div class="codes">
+						<p class="p1">&#60;!DOCTYPE html&#62;</p>
+						<p class="p1">&#60;html&#62;</p>
+						<p class="p1">&#60;body&#62;</p>
+						<p class="p2">&#60;address&#62;</p>
+						<p class="p2">Weitten by &#60;a href=&#34;mailto:webmaster@example.com&#34;&#62;Donald
+							Duck&#60;/a&#62;.&#60;br /&#62;</p>
+						<p class="p2">Visit us at:&#60;br /&#62;</p>
+						<p class="p2">Example.com&#60;br /&#62;</p>
+						<p class="p2">Box 564, Disneyland&#60;br /&#62;</p>
+						<p class="p2">USA</p>
+						<p class="p2">&#60;/address&#62;</p>
+						<p class="p1">&#60;/body&#62;</p>
+						<p class="p1">&#60;/html&#62;</p>
+					</div>
+					<p><strong>注释：</strong>此例演示如何在HTML文件中写地址。</p>
+				</div>
+				<div class="bkc">
+					<h3>缩写和首字母缩写</h3>
+					<div class="codes">
+						<p class="p1">&#60;!DOCTYPE html&#62;</p>
+						<p class="p1">&#60;html&#62;</p>
+						<p class="p1">&#60;body&#62;</p>
+						<p class="p2">&#60;abrr title=&#34;etcetera&#34;&#62;etc.&#60;/abbr&#62;</p>
+						<p class="p2">&#60;br /&#62;</p>
+						<p class="p2">&#60;acronym title=&#34;World Wide Web&#34;&#62;WWW&#60;/acronym&#62;</p>
+						<p class="p2">&#60;p&#62;在某些浏览器中，当您把鼠标移至缩略词语上时，title可用于展示表达的完整版本。&#60;/p&#62;</p>
+						<p class="p2">&#60;p&#62;仅对于IE5中的acronym元素有效。&#60;/p&#62;</p>
+						<p class="p2">&#60;p&#62;对于Netscape 6.2中的abbr和acronym元素都有效。&#60;/p&#62;</p>
+						<p class="p1">&#60;/body&#62;</p>
+						<p class="p1">&#60;/html&#62;</p>
+					</div>
+					<p><strong>注释：</strong>此例演示如何实现缩写和首字母缩写。</p>
+				</div>
+				<div class="bkc">
+					<h3>文字方向</h3>
+					<div class="codes">
+						<p class="p1">&#60;!DOCTYPE html&#62;</p>
+						<p class="p1">&#60;html&#62;</p>
+						<p class="p1">&#60;body&#62;</p>
+						<p class="p2">&#60;p&#62;如果您的浏览器支持 bi-directional override
+							(bdo)，下一行会从又向左输出（rtl）；&#60一行会从又向左输出（rtl）；&#60;/p&#62;</p>
+						<p class="p2">&#60;bdo dir=&#34;rtl&#34;&#62;</p>
+						<p class="p3">Here is some Hebrew text</p>
+						<p class="p2">&#60;/bdo&#62;</p>
+						<p class="p1">&#60;/body&#62;</p>
+						<p class="p1">&#60;/html&#62;</p>
+					</div>
+					<p><strong>注释：</strong>此例演示如何改变文字方向。</p>
+				</div>
+				<div class="bkc">
+					<h3>块引用</h3>
+					<div class="codes">
+						<p class="p1">&#60;!DOCTYPE html&#62;</p>
+						<p class="p1">&#60;html&#62;</p>
+						<p class="p1">&#60;body&#62;</p>
+						<p class="p1">这是长的引用：</p>
+						<p class="p1">&#60;blockquote&#62;</p>
+						<p class="p1">这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。</p>
+						<p class="p1">&#60;/blockquote&#62;</p>
+						<p class="p1">这是短的引用：</p>
+						<p class="p1">&#60;q&#62;</p>
+						<p class="p1">这是短的引用。</p>
+						<p class="p1">&#60;/q&#62;</p>
+						<p class="p1">&#60;p&#62;</p>
+						<p class="p1">使用blockquote元素的话，浏览器会插入换行和外边距，而q元素不会有任何特殊的呈现。</p>
+						<p class="p1">&#60;/p&#62;</p>
+						<p class="p1">&#60;/body&#62;</p>
+						<p class="p1">&#60;/html&#62;</p>
+					</div>
+					<p><strong>注释：</strong>此例演示如何实现长短不一的引用语。</p>
+				</div>
+				<div class="bkc">
+					<h3>删除字效果和插入字效果</h3>
+					<div class="codes">
+						<p class="p1">&#60;!DOCTYPE html&#62;</p>
+						<p class="p1">&#60;html&#62;</p>
+						<p class="p1">&#60;body&#62;</p>
+						<p class="p2">
+							&#60;p&#62;一打有&#60;del&#62;二十&#60;/del&#62;&#60;ins&#62;十二&#60;/ins&#62;件。&#60;/p&#62;</p>
+						<p class="p2">&#60;p&#62;大多数浏览器会改写为删除线和下划线文本。&#60;/p&#62;</p>
+						<p class="p2">&#60;p&#62;一些老式的浏览器会把删除文本和下划线文本显示为普通文本。&#60;/p&#62;</p>
+						<p class="p1">&#60;/body&#62;</p>
+						<p class="p1">&#60;/html&#62;</p>
+					</div>
+					<p><strong>注释：</strong>此例演示如何标记删除文本和插入文本。</p>
+				</div>
+				<div class="bkc">
+					<h2>如何查看HTML源码</h2>
+					<p>你是否有过这样的经历，当你看到一个很棒的站点，你会很想知道开发人员是如何将它实现的？</p>
+					<p>你有没有看过一些网页，并且想知道它是如何做出来的呢？</p>
+					<p>要揭示一个网站的技术秘密，其实很简单。单击浏览器的“查看”菜单，选择“查看源文件”即可。随后你会看到一个弹出的窗口，窗口内就是实际的HTML代码。</p>
+				</div>
+				<div class="bkc">
+					<h2>文本格式化标签</h2>
+					<table class="dataintable">
+						<tr>
+							<th style="width:30%">标签</th>
+							<th style="width:70%">描述</th>
+						</tr>
+						<tr>
+							<td><a href="">&#60;b&#62;</a></td>
+							<td>定义粗体文本。</td>
+						</tr>
+						<tr>
+							<td><a href="">&#60;big&#62;</a></td>
+							<td>定义大号字。</td>
+						</tr>
+						<tr>
+							<td><a href="">&#60;em&#62;</a></td>
+							<td>定义着重字。</td>
+						</tr>
+						<tr>
+							<td><a href="">&#60;i&#62;</a></td>
+							<td>定义斜体字。</td>
+						</tr>
+						<tr>
+							<td><a href="">&#60;small&#62;</a></td>
+							<td>定义小号字。</td>
+						</tr>
+						<tr>
+							<td><a href="">&#60;strong&#62;</a></td>
+							<td>定义家中语气。</td>
+						</tr>
+						<tr>
+							<td><a href="">&#60;sub&#62;</a></td>
+							<td>定义下标字。</td>
+						</tr>
+						<tr>
+							<td><a href="">&#60;sup&#62;</a></td>
+							<td>定义上标字。</td>
+						</tr>
+						<tr>
+							<td><a href="">&#60;ins&#62;</a></td>
+							<td>定义插入字。</td>
+						</tr>
+						<tr>
+							<td><a href="">&#60;del&#62;</a></td>
+							<td>定义删除字。</td>
+						</tr>
+						<tr>
+							<td><a href="">&#60;s&#62;</a></td>
+							<td><em>不赞成使用。</em>使用&#60;del&#62;代替。</td>
+						</tr>
+						<tr>
+							<td><a href="">&#60;strike&#62;</a></td>
+							<td><em>不赞成使用。</em>使用&#60;del&#62;代替。</td>
+						</tr>
+						<tr>
+							<td><a href="">&#60;u&#62;</a></td>
+							<td><em>不赞成使用。</em>使用样式（style）代替。</td>
+						</tr>
+					</table>
+				</div>
+				<div class="bkc">
+					<h2>“计算机输出”标签</h2>
+					<table class="dataintable">
+						<tr>
+							<th style="width:30%">标签</th>
+							<th style="width:70%">描述</th>
+						</tr>
+						<tr>
+							<td><a href="">&#60;code&#62;</a></td>
+							<td>定义计算机代码。</td>
+						</tr>
+						<tr>
+							<td><a href="">&#60;kbd&#62;</a></td>
+							<td>定义键盘码。</td>
+						</tr>
+						<tr>
+							<td><a href="">&#60;samp&#62;</a></td>
+							<td>定义计算机代码样本。</td>
+						</tr>
+						<tr>
+							<td><a href="">&#60;tt&#62;</a></td>
+							<td>定义打字机代码。</td>
+						</tr>
+						<tr>
+							<td><a href="">&#60;var&#62;</a></td>
+							<td>定义变量。</td>
+						</tr>
+						<tr>
+							<td><a href="">&#60;pre&#62;</a></td>
+							<td>定义预格式文本。</td>
+						</tr>
+						<tr>
+							<td>&#60;listing&#62;</td>
+							<td><em>不赞成使用。</em>使用&#60;pre&#62;代替。</td>
+						</tr>
+						<tr>
+							<td>&#60;plaintext&#62;</td>
+							<td><em>不赞成使用。</em>使用&#60;pre&#62;代替。</td>
+						</tr>
+						<tr>
+							<td>&#60;xmp&#62;</td>
+							<td><em>不赞成使用。</em>使用&#60;pre&#62;代替。</td>
+						</tr>
+					</table>
+				</div>
+				<div class="bkc">
+					<h2>引用、引用和术语定义。</h2>
+					<table class="dataintable">
+						<tr>
+							<th style="width:30%">标签</th>
+							<th style="width:70%">描述</th>
+						</tr>
+						<tr>
+							<td><a href="">&#60;abbr&#62;</a></td>
+							<td>定义缩写。</td>
+						</tr>
+						<tr>
+							<td><a href="">&#60;acronym&#62;</a></td>
+							<td>定义首字母缩写。</td>
+						</tr>
+						<tr>
+							<td><a href="">&#60;address&#62;</a></td>
+							<td>定义地址。</td>
+						</tr>
+						<tr>
+							<td><a href="">&#60;bdo&#62;</a></td>
+							<td>定义文字方向。</td>
+						</tr>
+						<tr>
+							<td><a href="">&#60;blockquote&#62;</a></td>
+							<td>定义长的引用。</td>
+						</tr>
+						<tr>
+							<td><a href="">&#60;q&#62;</a></td>
+							<td>定义短的引用语。</td>
+						</tr>
+						<tr>
+							<td><a href="">&#60;cite&#62;</a></td>
+							<td>定义引用、引证。</td>
+						</tr>
+						<tr>
+							<td><a href="">&#60;dfn&#62;</a></td>
+							<td>定义一个定义项目。</td>
+						</tr>
+					</table>
+				</div>
+				<div class="bkc">
+					<h2>延伸阅读：</h2>
+					<p><a href="" title="HTML教程延伸阅读：改变文本的外观和含义">改变文本的外观和含义</a></p>
+				</div>
+			</div>
+			<!--上下翻页、目录-->
+			<div id="flipb" class="flip"></div>
+		</div>
+		<!--右边-->
+		<div id="right"></div>
+		<!--gotop-->
+		<div id="gotop"></div>
+		<!--网站声明-->
+		<div id="bottom" class="bottom"></div>
+	</div>
+</body>
+
+</html>

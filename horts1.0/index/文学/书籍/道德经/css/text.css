@@ -1,0 +1,100 @@
+.bkcName {
+    margin: 0 auto;
+    padding: 0px;
+    border: 0px;
+    width: 1000px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.nextback {
+    margin: 0 auto;
+    padding: 0px;
+    border: 0px solid #000;
+    width: 560px;
+    height: 50px;
+}
+
+.nextaclass,
+.muluclass,
+.backaclass {
+    margin: 0 auto;
+    padding: 0px;
+    border: 1px solid #000;
+    width: 150px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 40px;
+    text-align: center;
+    color: #000;
+    float: left;
+    display: block;
+}
+
+.nextaclass,
+.muluclass {
+    margin-left: 50px;
+}
+
+.index {
+    margin: 10px auto;
+    padding: 0px;
+    border-top: 1px solid #000;
+    width: 1000px;
+    height: 600px;
+    font-size: 32px;
+    color: #220353;
+}
+
+
+.textasclass,
+.textbsclass {
+    margin: 0 auto;
+    padding: 0px;
+    border: 0px solid #000;
+    width: 999px;
+    min-height: 100px;
+    overflow: hidden;
+}
+
+.textbsclass {
+    border: 1px solid #000;
+}
+
+.Textclass {
+    margin: 0 auto;
+    padding: 0px;
+    border: 1px solid #000;
+    width: calc((999px)/9 - 2px);
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 0px;
+    float: left;
+}
+
+h2 {
+    margin: 0px auto;
+    line-height: 50px;
+    font-size: 32px;
+    color: #000000;
+    background: transparent;
+}
+
+.sp00 {
+    color: #000;
+}
+
+.sp01 {
+    color: red;
+}
+
+.sp02 {
+    color: #ff9900;
+}
+
+p {
+    font-size: 20px;
+    color: #11032b;
+}

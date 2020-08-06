@@ -1,0 +1,9 @@
+html,
+body,
+.index {
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+}
+

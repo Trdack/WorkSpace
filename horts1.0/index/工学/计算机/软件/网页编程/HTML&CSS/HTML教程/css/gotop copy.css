@@ -1,0 +1,27 @@
+/*默认样式，主要是position:fixed实现屏幕绝对定位*/
+#gotoTop {
+	position: fixed;
+	left: calc(50% + 510px);
+	bottom: 20px;
+	margin: 0 auto;
+	padding: 0px;
+	width: 50px;
+	height: 100px;
+	text-align: center;
+	border: 1px solid #e0e0e0;
+	background: #fff;
+}
+
+/*用CSS表达式(expression)来实现ie6下position:fixed效果*/
+
+#gotoTop {
+	_position: fixed;
+	_top: expression(documentElement.scrollTop + documentElement.clientHeight * 3/4 + "px");
+}
+
+/*鼠标进入的反馈效果*/
+#gotoTop.hover {
+	background: #5CB542;
+	color: #fff;
+	text-decoration: none;
+}

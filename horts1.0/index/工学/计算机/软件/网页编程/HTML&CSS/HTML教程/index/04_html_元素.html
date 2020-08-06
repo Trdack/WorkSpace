@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>HTML_元素</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8;" />
+  <meta http-equiv="Content-Language" content="zh-CN" />
+  <script type="text/javascript" src="./../js/index.js"></script>
+</head>
+
+<body>
+  <div class="index">
+    <!--顶层-->
+    <div id="inatop" class="inatop"></div>
+    <!--位置-->
+    <div id="loca" class="loca"></div>
+    <!--左边-->
+    <div id="left"></div>
+    <!--中间-->
+    <div class="middle">
+      <!--上下翻页、目录-->
+      <div id="flipa" class="flip"></div>
+      <!--主体-->
+      <div class="subject">
+        <div class="bkc">
+          <h1>HTML_元素</h1>
+        </div>
+        <div class="bkc">
+          <p><strong>HTML文档是由HTML元素定义的。</strong></p>
+        </div>
+        <div class="bkc">
+          <h2>HTML元素</h2>
+          <p>
+            HTML元素指的是从开始标签(start tag)到结束标签(end tag)的所有代码。
+          </p>
+          <table class="dataintable">
+            <tr>
+              <th style="width:33%;">开始标签</th>
+              <th style="width:33%;">元素内容</th>
+              <th>结束标签</th>
+            </tr>
+            <tr>
+              <td>&lt;p&gt;</td>
+              <td>This is a paragraph.</td>
+              <td>&lt;/p&gt;</td>
+            </tr>
+            <tr>
+              <td>&lt;a href=&#34;html_元素.html&#34;&gt;</td>
+              <td>This is a link.</td>
+              <td>&lt;/a&gt;</td>
+            </tr>
+            <tr>
+              <td>&lt;br /&gt;</td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+
+          <p>
+            <span>注释：</span>开始标签常被成为开放标签(opening
+            tag)，结束标签常被成为闭合标签(closing tag)。
+          </p>
+        </div>
+        <div class="bkc">
+          <h2>HTML 元素语法</h2>
+          <ul>
+            <li>HTML元素以<em>开始标签</em>起始</li>
+            <li>HTML元素以<em>结束标签</em>终止</li>
+            <li><em>元素的内容</em>是开始标签与结束标签之间的内容</li>
+            <li>某些HTML元素具有<em>空元素(empty content)</em></li>
+            <li>
+              空元素<em>在开始标签中进行关闭</em>(以开始标签的结束而结束)
+            </li>
+            <li>大多数HTML元素可拥有<em>属性</em></li>
+          </ul>
+          <p>
+            <span>提示：</span>您将在本教程的下一章中学习更多有关属性的内容。
+          </p>
+        </div>
+        <div class="bkc">
+          <h2>嵌套的HTML元素</h2>
+          <p>大多数的HTML元素可以嵌套(可以包含其他HTML元素)。</p>
+          <p>HTML文档由嵌套的HTML元素构成。</p>
+          <h3>HTML文档实例</h3>
+          <div class="codes">
+            <p class="p1">&lt;!DOCTYPE html&gt;</p>
+            <p class="p1">&lt;html&gt;</p>
+            <p class="p1">&lt;body&gt;</p>
+            <p class="p2">
+              &lt;p&gt;This is my first paragraph(段落). &lt;/p&gt;
+            </p>
+            <p class="p1">&lt;/body&gt;</p>
+            <p class="p1">&lt;/html&gt;</p>
+          </div>
+          <p>上面例子包含三个HTML元素。</p>
+        </div>
+        <div class="bkc">
+          <h2>HTML实例解释</h2>
+          <h3>&lt;p&gt;元素</h3>
+          <div class="codes">
+            <p class="p1">
+              &lt;p&gt;This is my first paragraph(段落).&lt;/p&gt;
+            </p>
+          </div>
+          <p>这个&lt;p&gt;元素定义了HTML文档中的一个段落。</p>
+          <p>
+            这个袁术拥有一个开始标签&lt;p&gt;，以及一个结束标签&lt;/p&gt;。
+          </p>
+          <p>元素内容是：This is my first paragraph(段落).</p>
+          <h3>&lt;body&gt;</h3>
+          <div class="codes">
+            <p class="p1">&lt;body&gt;</p>
+            <p class="p2">
+              &lt;p&gt;This is my first paragraph(段落).&lt;/p&gt;
+            </p>
+            <p class="p1">&lt;body&gt;</p>
+          </div>
+          <p>&lt;body&gt;元素定义了HTML文档的主体。</p>
+          <p>
+            这个元素拥有一个开始标签&lt;body&gt;，以及一个结束标签&lt;body&gt;。
+          </p>
+          <p>元素内容是另一个HTML元素(p元素)。</p>
+          <h3>&lt;html&gt;元素</h3>
+          <div class="codes">
+            <p class="p1">&lt;html&gt;</p>
+            <p class="p1">&lt;body&gt;</p>
+            <p class="p2">
+              &lt;p&gt;This is my first paragraph(段落).&lt;/p&gt;
+            </p>
+            <p class="p1">&lt;body&gt;</p>
+            <p class="p1">&lt;html&gt;</p>
+          </div>
+          <p>&lt;html&gt;元素定义了整个HTML文档。</p>
+          <p>
+            这个元素拥有一个开始标签&lt;html&gt;，以及一个结束标签
+            &lt;/html&gt;
+          </p>
+          <p>元素内容是另一个HTML元素(body元素)。</p>
+        </div>
+        <div class="bkc">
+          <h2>不要忘记结束标签</h2>
+          <p>即使您忘记了使用结束标签，大多数浏览器也会正确地显示HTML：</p>
+          <div class="codes">
+            <p class="p1">&lt;p&gt;This is a paragraph</p>
+            <p class="p1">&lt;p&gt;This is a paragraph</p>
+          </div>
+          <p>
+            上面的例子在大多数浏览器中都没问题，但不要依赖这种做法。忘记使用结束标签会产生不可预料的后果或错误。
+          </p>
+          <p><span>注释：</span>未来HTML版本不允许省略结束标签。</p>
+        </div>
+        <div class="bkc">
+          <h2>空的HTML元素</h2>
+          <p>没有内容的HTML元素被成为空元素。空元素是在开始标签中关闭的。</p>
+          <p>
+            &lt;br&gt;就是没有关闭标签的空元素(&lt;br&gt;标签定义换行)。
+          </p>
+          <p>在XHTML、XML以及未来版本的HTML中，所有元素都必须被关闭。</p>
+          <p>
+            在开始标签中添加斜杠，比如&lt;br
+            /&gt;，是关闭空元素的正确方法，HTML、XHTML和XML都接受这种方式。
+          </p>
+          <p>
+            即使&lt;br&gt;在所有浏览器中都是有效的，但使用&lt;br
+            /&gt;其实是更长远的保障。
+          </p>
+        </div>
+        <div class="bkc">
+          <h2>HTML提示：使用小写标签</h2>
+          <p>
+            HTML标签对大小写不敏感：&lt;P&gt;等同于&lt;p&gt;。许多网站都使用大写的HTML标签。
+          </p>
+          <p>
+            本网页使用的是小写标签，因为万维网联盟(W3C)在HTML4中<em>推荐</em>使用小写，而在未来(X)HTML版本中<em>强制</em>使用小写。
+          </p>
+        </div>
+      </div>
+      <!--上下翻页、目录-->
+      <div id="flipb" class="flip"></div>
+    </div>
+    <!--右边-->
+    <div id="right"></div>
+    <!--gotop-->
+    <div id="gotop"></div>
+    <!--网站声明-->
+    <div id="bottom" class="bottom"></div>
+  </div>
+</body>
+
+</html>

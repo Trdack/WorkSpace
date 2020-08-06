@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>id 选择器</title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <!-- 外链css文件 -->
+  <link rel="stylesheet" type="text/css" href="./../../css/index_01.css" />
+  <link rel="stylesheet" type="text/css" href="./../../css/ibook_01.css" />
+</head>
+
+<body>
+  <!--  总层  -->
+  <div id="index" class="index">
+    <div class="ibooks">
+      <div class="divck">
+        <h1>CSS 类选择器</h1>
+      </div>
+      <div class="location">
+        <span>=>></span>
+        <a href="./../../web_index.html">网页编程</a>
+        <span>-></span>
+        <a href="./../CSS_index.html">CSS</a>
+        <span>-></span>
+        <a href="./CSS006.html">CSS 类选择器</a>
+      </div>
+      <div class="divck">
+        <h2>在 CSS 中，类选择器以一个点号显示：</h2>
+        <div class="prex">
+          <ol>
+            <li>.center {text-algin: center;}</li>
+          </ol>
+        </div>
+        <p>在上面的例子中，所有拥有 center 类的 HTML 元素均为居中。</p>
+        <p>在下面的 HTML 代码中，h1 和 p 元素都有 center 类。这意味着两者都将遵守".center"选择器中的规则。</p>
+        <div class="prex">
+          <ol>
+            <li>&lt;h1 class="center"&gt;</li>
+            <li>This heading will be center-aligned.</li>
+            <li>&lt;/h1&gt;</li>
+            <li></li>
+            <li>&lt;p class="center"&gt;</li>
+            <li>This paragraph will aslo be center-aligned.</li>
+            <li>&lt;/p&gt;</li>
+          </ol>
+        </div>
+        <p><strong>注意：</strong>类名的第一个字符不能使用数字！它无法在 Mozilla 或 Firefox 中起作用。</p>
+        <p class="p1">和 id 选择器一样，class 选择器也可以被用作派生选择器：</p>
+        <div class="prex">
+          <ol>
+            <li>.fancy td {</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;color: #f60;</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;background: #666;</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;}</li>
+          </ol>
+        </div>
+        <p>在上面这个例子中，类名为 fancy 的更大的元素内部的表格单元都会以灰色背景显示橙色文字。(名为 fancy 的更大的元素可能是一个表格或者一个 div)</p>
+        <p class="p1">元素也可以基于它们的类而被选择：</p>
+      </div>
+      <div class="divck">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

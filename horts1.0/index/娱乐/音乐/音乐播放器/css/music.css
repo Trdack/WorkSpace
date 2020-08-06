@@ -1,0 +1,247 @@
+html {
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  overflow: visible;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  background: #ffffff;
+  overflow: auto;
+}
+
+.index {
+  margin: 0px auto;
+  padding: 0px;
+  border: 0px solid rgb(76, 0, 255);
+  background: #191919;
+  overflow: auto;
+}
+
+
+.music {
+  margin: 0px auto;
+  padding: 0px;
+  border: 0px solid #fff;
+  width: 1075px;
+  background: #000;
+  overflow: auto;
+}
+
+.music_aa {
+  margin: 25px auto;
+  padding: 0px;
+  border: 0px solid #fff;
+  width: 1025px;
+  height: 275px;
+  background: #191919;
+  overflow: hidden;
+}
+
+.music_aaa {
+  margin: 25px auto;
+  margin-left: 25px;
+  padding: 0px;
+  border: 0px;
+  width: 225px;
+  height: 225px;
+  border-radius: 50%;
+  background: #000;
+  float: left;
+}
+
+.music_aab {
+  margin: 25px auto;
+  margin-left: 25px;
+  padding: 0px;
+  border: 0px;
+  width: 725px;
+  height: 225px;
+  background: transparent;
+  float: left;
+}
+
+.music_aaba {
+  margin: 0px auto;
+  padding: 0px;
+  border: 0px;
+  width: 725px;
+  height: 50px;
+  background: transparent;
+  color: rgb(255, 117, 4);
+  font: 30px 楷书;
+  line-height: 50px;
+  text-align: center;
+}
+
+.music_aabb {
+  margin: 0px auto;
+  padding: 0px;
+  border: 0px;
+  width: 725px;
+  height: 50px;
+  background: transparent;
+}
+
+.music_aabba,
+.music_aabbc {
+  margin: 0px auto;
+  padding: 0px;
+  border: 0px;
+  width: 125px;
+  height: 50px;
+  color: #00ff00;
+  font: 30px 楷书;
+  line-height: 50px;
+  float: left;
+}
+
+.music_aabba {
+  text-align: right;
+}
+
+.music_aabbc {
+  text-align: left;
+}
+
+.music_aabbb {
+  margin: 0px auto;
+  padding: 0px;
+  border: 0px;
+  width: 475px;
+  height: 50px;
+  float: left;
+}
+
+.music_aabbba {
+  margin: 21px auto;
+  padding: 0px;
+  border: 0px;
+  width: 425px;
+  height: 8px;
+  background: #083401;
+}
+
+.music_aabc {
+  margin: 0px auto;
+  padding: 0px;
+  border: 0px;
+  width: 725px;
+  height: 100px;
+  background: transparent;
+}
+
+.music_aabca,
+.music_aabcb,
+.music_aabcc,
+.music_aabcd,
+.music_aabce,
+.music_aabcf {
+  margin: 0px auto;
+  margin-left: 25px;
+  padding: 0px;
+  border: 0px;
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+.music_aabca {
+  margin-left: 0px;
+}
+
+
+.mode1,
+.mode2,
+.mode3 {
+  margin: 0 auto;
+  padding: 0px;
+  border: 0px solid red;
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+.mode1 {
+  background: url(./../images/player_bg/顺序播放.gif) round;
+}
+
+.mode2 {
+  background: url(./../images/player_bg/随机播放.gif) round;
+}
+
+.mode3 {
+  background: url(./../images/player_bg/单曲循环.gif) round;
+}
+
+.music_aabcb {
+  background: url(./../images/player_bg/上一曲.gif) round;
+}
+
+.music_aabcc {
+  background: url(./../images/player_bg/播放.gif) round;
+}
+
+.music_aabcd {
+  background: url(./../images/player_bg/下一曲.gif) round;
+}
+
+.music_aabce {
+  background: url(./../images/player_bg/列表.gif) round;
+}
+
+.music_aabcf {
+  background: url(./../images/player_bg/声音.gif) round;
+}
+
+.music_name,
+.music_nsfg,
+.music_songer {
+  margin: 0px auto;
+  padding: 0px;
+  border: 0px;
+  color: #ffb95e;
+  font: 35px "楷体";
+  float: none;
+  display: inline-block;
+}
+
+.music_nsfg {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #001aff;
+}
+
+.music_aabbbaa {
+  margin: 0px auto;
+  padding: 0px;
+  border: 0px;
+  width: 0px;
+  height: 8px;
+  background: #00ff00;
+  float: left;
+}
+
+.music_ab {
+  margin: 25px auto;
+  padding: 0px;
+  border: 0px solid #fff;
+  width: 1025px;
+  height: 490px;
+  background: #191919;
+
+}
+
+.disc {
+  margin: 0px auto;
+  padding: 0px;
+  border: 0px;
+  border-radius: 50%;
+  width: 225px;
+  height: 225px;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS 高级语法</title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <!-- 外链css文件 -->
+  <link rel="stylesheet" type="text/css" href="./../../css/index_01.css" />
+  <link rel="stylesheet" type="text/css" href="./../../css/ibook_01.css" />
+</head>
+
+<body>
+  <!--  总层  -->
+  <div id="index" class="index">
+    <div class="ibooks">
+      <div class="divck">
+        <h1>CSS 高级语法</h1>
+      </div>
+      <div class="location">
+        <span>=>></span>
+        <a href="./../../web_index.html">网页编程</a>
+        <span>-></span>
+        <a href="./../CSS_index.html">CSS</a>
+        <span>-></span>
+        <a href="./CSS03.html">CSS 高级语法</a>
+      </div>
+      <div class="divck">
+        <h2>选择器的组成</h2>
+        <p>你可以对选择器分组，这样，被分组的选择器就可以共享相同的声明。用逗号将需要分组的选择器分开。在下面的例子中，我们对所有的标题元素进行了分组，所有的标题元素都是绿色的。</p>
+        <div class="prex">
+          <ol>
+            <li>h1,h2,h3,h4,h5,h6 {</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;color: green;</li>
+            <li>}</li>
+          </ol>
+        </div>
+      </div>
+      <div class="divck">
+        <h2>继承及其问题</h2>
+        <p>根据CSS,子元素从父元素继承属性。但是它并不总是按此方式工作。看看下面这条规则：</p>
+        <div class="prex">
+          <ol>
+            <li>body {</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;font-family: Verdana, sans-serif;</li>
+            <li>}</li>
+          </ol>
+        </div>
+        <P>根据上面这条规则，站点的body元素将使用Verdana字体(假如访问者的系统中存在改字体的话)。</P>
+        <p>通过CSS继承，子元素将继承最高级元素(在本例中是body)所拥有的属性(这些子元素诸如 p, td, ul, ol, li, dl, dt,
+          dd)。不需要另外规则，所有body的子元素都应该显示Verdana字体，子元素的子元素也一样。并且在大部分的现代浏览器中，也确实是这样的。</p>
+        <p>但是在那个浏览器大战的血腥年代里，这种情况就未必会发生，那时候对标准的支持并不是企业的优先选择。比方说，Netscape
+          4就不支持继承，它不仅忽略继承，而且也忽略应用于body元素的规则。IE/Windows直到IE6还存在相关问题，在表格内的文字样式会被忽略。我们又该如何是好呢？</p>
+      </div>
+      <div class="divck">
+        <h2>友善的对待Netscape 4</h2>
+        <p>
+          幸运地是，我们可以通过使用我们称为“Be Kind to Netscape 4”的冗余法则来处理旧式浏览器无法理解的继承问题。
+        </p>
+        <div class="prex">
+          <ol>
+            <li>body {</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;font-family: Verdana, sans-serif;</li>
+            <li>}</li>
+            <li>p, td, ul, ol, li, dl, dt, dd {</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;font-family: Verdana, sans-serif;</li>
+            <li>}</li>
+          </ol>
+        </div>
+        <p>4.0浏览器无法理解继承，不过他们可以理解组选择器。这么做虽然会浪费一些用户的宽带，但如果需要对 Netscape 4用户进行支持，就不得不这么做。</p>
+      </div>
+      <div class="divck">
+        <h2>继承是一个诅咒吗？</h2>
+        <p>如果你不希望“Verdana, sans-serif”字体被所有的子元素继承，又该怎么做呢？比方说，你希望段落的字体是Times。没问题。创建一个针对p的特殊规则，这样它就会摆脱父元素的规则：
+        </p>
+        <div class="prex">
+          <ol>
+            <li>body {</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;font-family: Verdana, sans-serif;</li>
+            <li>}</li>
+            <li>p, td, ul, ol, li, dl, dt, dd {</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;font-family: Verdana, sans-serif;</li>
+            <li>}</li>
+            <li>p {</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;font-family: Times, "Times New Roman", serif;</li>
+            <li>}</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

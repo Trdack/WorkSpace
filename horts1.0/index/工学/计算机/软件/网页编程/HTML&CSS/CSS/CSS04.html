@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS 派生选择器</title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <!-- 外链css文件 -->
+  <link rel="stylesheet" type="text/css" href="./../../css/index_01.css" />
+  <link rel="stylesheet" type="text/css" href="./../../css/ibook_01.css" />
+</head>
+
+<body>
+  <!--  总层  -->
+  <div id="index" class="index">
+    <div class="ibooks">
+      <div class="divck">
+        <h1>CSS 派生选择器</h1>
+      </div>
+      <div class="location">
+        <span>=>></span>
+        <a href="./../../web_index.html">网页编程</a>
+        <span>-></span>
+        <a href="./../CSS_index.html">CSS</a>
+        <span>-></span>
+        <a href="./CSS04.html">CSS 派生选择器</a>
+      </div>
+      <div class="divck">
+        <h2>派生选择器</h2>
+        <p class="p1">通过依据元素在其位置的上下文关系来定义样式，你可以是标记更加简洁。</p>
+        <p>在CSS1中，通过这种方式来应用规则的选择器被称为上下文选择器(contextual
+          selectors),这是由于它们依赖于上下文关系来应用或者避免某项规则。在CSS2中，它们被称为派生选择器，但是无论如何称呼它们，它们的作用都是相同的。</p>
+        <p>派生选择器允许我们根据文档的上下文关系来确定某个标签的样式。通过合理地使用派生选择器，我们可以使HTML代码变得更加整洁。</p>
+        <P>比方说，我们希望列表中的strong元素变为斜体，而不是通常的粗体字，可以这样定义一个派生选择器：</P>
+        <div class="prex">
+          <ol>
+            <li><strong>li</strong>&nbsp;<strong>strong</strong> {</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;font-style: italic;</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;font-weight: normal;</li>
+            <li>}</li>
+          </ol>
+        </div>
+        <p>请注意标记为<strong>&lt;strong&gt;</strong>的橘红色代码的上下文关系：</p>
+        <div class="prex">
+          <ol>
+            <li>&lt;p&gt;&lt;strong&gt;这是粗体字，不是斜体字，因为这个strong元素不在列表当中，所以这个规则对我不起作用&lt;/strong&gt;&lt;/p&gt;</li>
+            <li></li>
+            <li>&lt;ol&gt;</li>
+            <li>&lt;li&gt;&lt;strong&gt;这是斜体字，这是因为这个strong元素位于li元素内。&lt;/strong&gt;&lt;/li&gt;</li>
+            <li>&lt;li&gt;这是正常字体。&lt;/li&gt;</li>
+            <li>&lt;/ol&gt;</li>
+          </ol>
+        </div>
+        <p>上面的例子中，只有li元素中的strong元素的样式为斜体字，无需为strong元素定义特别的class或id,代码更加简洁。在看看下面的CSS规则：</p>
+        <div class="prex">
+          <ol>
+            <li>strong {</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;color: red;</li>
+            <li>}</li>
+            <li>h2 {</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;color: red;</li>
+            <li>}</li>
+            <li>h2 strong {</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;color: blue;</li>
+            <li>}</li>
+          </ol>
+        </div>
+        <p>下面是它施加影响的HTML：</p>
+        <div class="prex">
+          <ol>
+            <li>&lt;p&gt;The strongly emphasized word in this paragraph is&lt;strong&gt;red&lt;/strong&gt;.&lt;/p&gt;
+            </li>
+            <li>&lt;h2&gt;This subhead is also red.&lt;/h2&gt;</li>
+            <li>&lt;h2&gt;The strongly emphasized word in this subhead is&lt;strong&gt;bule&lt;/strong&gt;.&lt;/h2&gt;
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="divck">
+        <h2>相关内容</h2>
+        <p>如果需要更深入地学习关于派生选择器的知识，请阅读高级教程中的一下内容：</p>
+        <ul>
+          <li><a href="#">CSS 后代选择器</a></li>
+          <li><a href="#">CSS 子元素选择器</a></li>
+          <li><a href="#">CSS 相邻兄弟选择器</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

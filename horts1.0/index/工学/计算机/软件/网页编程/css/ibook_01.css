@@ -1,0 +1,139 @@
+html {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  background: #ebebeb;
+}
+
+.ibooks {
+  margin: 0 auto;
+  padding: 0px;
+  border: 0px solid #000;
+  width: 1000px;
+  min-height: 800px;
+  background: #fff;
+}
+
+a:link,
+a:visited {
+  color: #000;
+  font-size: 20px;
+  line-height: 28px;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #0f0f0f;
+}
+
+a:hover,
+a:active {
+  font-size: 22px;
+  line-height: 28px;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.divck {
+  margin: 5px auto;
+  padding: 1px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px auto;
+  text-indent: 20px;
+  font: normal bold "宋体", "Courier New";
+  color: #3c5e6b;
+  text-shadow: 0 0 6px #d7c5ff, -1px -1px #fff, 1px -1px #444;
+  line-height: 50px;
+}
+
+p,
+p.p1 {
+  margin: 0 auto;
+  padding: 1px;
+  border: 0px solid #000;
+  text-indent: 48px;
+  /*缩进*/
+  word-spacing: -10px;
+  /*字间隔*/
+  font: normal bold 24px "仿宋", "Courier New";
+  color: #1f1f1f;
+  background: #fff;
+  punctuation-trim: start;
+  line-height: 30px;
+  /*行间距，需要放后面*/
+  text-decoration: none;
+}
+
+p.p1 {
+  color: #069101;
+  font: normal bold 24px "宋体", "Courier New";
+}
+
+.divck ul,
+.divck ol {
+  margin: 0px auto;
+  padding-left: 50px;
+}
+
+li {
+  text-indent: 24px;
+  word-spacing: -10px;
+  font: normal bold 22px "楷书", "Courier New";
+  color: #191822;
+  text-shadow: 1px 1px 1px #2600ff;
+}
+
+strong {
+  color: #ff7200;
+  font: normal bold 24px "宋体", "Courier New";
+}
+
+.divck img {
+  margin: 0px auto;
+  padding: 20px 20px 20px 50px;
+  border: 0px solid #000;
+  background: transparent;
+}
+
+.prex {
+  margin: 0px atuo;
+  padding: 0px;
+  border: 0px solid #000;
+  background: #fff;
+  color: #fff;
+  font-size: 24px;
+}
+
+.prex ol {
+  list-style-type: decimal;
+  list-style-position: outside;
+  margin: 6px auto;
+  padding-left: 80px;
+  border: 0px solid red;
+  color: #fff;
+  background: #666;
+}
+
+.prex li {
+  text-indent: 6px;
+  line-height: 30px;
+  color: #ffffff;
+  text-shadow: 0.5px 0.5px 0.5px #0059ff, 1px 1px 1px #fff;
+  background: #000;
+}
