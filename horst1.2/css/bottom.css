@@ -1,0 +1,26 @@
+.bota {
+    margin: 0 auto;
+    height: 200px;
+    background: #dfdfdf;
+}
+
+.botb {
+    margin: 0 auto;
+    height: 50px;
+    line-height: 30px;
+    font-size: 22px;
+    background: transparent;
+    text-align: center;
+
+}
+
+.botc,
+.botd,
+.bote {
+    margin: 10px auto;
+    margin-left: 25px;
+    width: 300px;
+    height: 180px;
+    background: #fff;
+    float: left;
+}

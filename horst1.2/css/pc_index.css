@@ -1,0 +1,166 @@
+* {
+    background: transparent;
+}
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.index {
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: inline;
+}
+
+.inatop {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.tops {
+    margin: 0px auto;
+    padding: 0px;
+    border: 0px solid #000;
+    height: 60px;
+}
+
+.logo,
+.logo a,
+.logo h1,
+.logo a:link,
+.logo a:visited {
+    width: 200px;
+    height: 60px;
+    background: transparent;
+}
+
+.logo {
+    margin: 0px auto;
+    float: left;
+}
+
+.logo a,
+.logo h1,
+.logo a:link,
+.logo a:visited {
+    margin: 0 auto;
+    padding: 0px;
+    border: 0px;
+}
+
+.logo a,
+.logo h1 {
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.logo a:link,
+a:visited {
+    display: block;
+    background: transparent url(./../bg/logo.gif) top left no-repeat;
+}
+
+.logo a:hover {
+    background: transparent url(./../bg/logo.gif) 0px -60px no-repeat;
+}
+
+.loca {
+    margin: 0px auto;
+    margin-bottom: 10px;
+    padding: 0px;
+    border: 0px solid #000;
+    width: 100%;
+    height: 35px;
+    background: #393d54;
+    overflow: hidden;
+}
+
+
+.locations {
+    margin: 0px auto;
+    padding: 0px;
+    border: 0px solid #000;
+    height: 35px;
+    line-height: 35px;
+    text-align: left;
+    background: transparent;
+    font-family: Verdana, Arial, 宋体;
+    font-size: 24px;
+    overflow: hidden;
+}
+
+.locations a,
+.locations span {
+    padding: 0px;
+    color: #fff;
+}
+
+.locations a:link,
+.locations a:visited {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0px;
+    color: #fff;
+}
+
+.locations a:hover {
+    background: #7e85a0;
+    color: #fff;
+    font-size: 24px;
+}
+
+
+.left {}
+
+.middle {
+    margin: 10px auto;
+    padding: 0;
+    border: 0px solid #000;
+    min-height: 500px;
+    background: transparent;
+    overflow: hidden;
+}
+
+.mabile {
+    display: none;
+}
+
+.right {}
+
+.gotop {
+    position: fixed;
+    left: calc(50% + 510px);
+    bottom: 10px;
+    margin: 0 auto;
+    padding: 0px;
+    width: 60px;
+    height: 60px;
+    font-size: 50px;
+    text-align: center;
+    border: 1px solid #000;
+    background: transparent;
+    display: none;
+}
+
+.bottom {
+    margin: 0 auto;
+    padding: 0;
+    border-top: 1px solid #000;
+    width: 100%;
+    background-image: linear-gradient(#d9d6eb, #fff);
+    overflow: hidden;
+}

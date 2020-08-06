@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+
+        div:-ms-fullscreen {
+            width: 600px;
+        }
+
+        div:-moz-full-screen {
+            height: 400px;
+        }
+
+        div:-webkit-full-screen {
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>开始</div>
+    <script>
+        var div = document.getElementsByTagName("div")[0];
+        div.onclick = function () {
+
+            if (this.requestFullscreen) {
+                this.requestFullscreen();
+
+            }
+            else if (this.mozRequestFullScreen) {
+                console.log(this.mozRequestFullScreen);
+                this.mozRequestFullScreen();
+
+            }
+            else if (this.webkitRequestFullScreen) {
+                console.log(this.webkitRequestFullScreen);
+                this.webkitRequestFullScreen();
+
+
+            }
+
+
+
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.index {
+    width: 360px;
+    overflow: hidden;
+}
+
+.inatop {
+    height: 38px;
+    background-color: #fff;
+}
+
+.loca {
+    height: 30px;
+    background-color: #393d54;
+}
+
+.left {
+    height: 100px;
+    background-color: #fff;
+    display: none;
+}
+
+.middle {
+    background-color: #fff;
+}
+
+.right {
+    display: none;
+}
+
+.gotop {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+}
+
+.bottom {
+    border-top: 1px solid #393d54;
+    min-height: 100px;
+    background-color: #ddd;
+    overflow: hidden;
+}
