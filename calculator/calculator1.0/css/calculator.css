@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+.index {
+    width: 100%;
+    height: 100%;
+    border: 0px solid #000;
+}
+
+.cal {
+    margin: 10px auto;
+    width: 360px;
+    height: 600px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: inset -3px -3px #bbbfc2;
+    background-color: #576175;
+}
+
+.displays {
+    margin: 22px auto 8px;
+    padding: 5px;
+    width: 318px;
+    height: 160px;
+    border: 1px solid #000;
+    box-shadow: inset 2px 2px #6f7375;
+    background-color: #000;
+    /* background-color: #fafafa; */
+    transition: all 2s;
+    -webkit-transition: all 2s;
+}
+
+.states {
+    height: 30px;
+}
+
+.inputs {
+    width: 318px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.functions {
+    border: 0px solid #000;
+    background: transparent;
+    overflow: hidden;
+}
+
+.funas,
+.funbs,
+.funcs {
+    margin: 4px auto;
+    border: 0px solid #000;
+    overflow: hidden;
+    background: transparent;
+}
+
+.funas,
+.funbs {
+    width: 347px;
+}
+
+.funaas,
+.funccs {
+    width: 100px;
+    background: transparent;
+    float: left;
+}
+
+.funbas {
+    width: 144px;
+    height: 100px;
+    float: left;
+}
+
+.funbbs {
+    margin: 0 auto;
+    width: 110px;
+    height: 100px;
+    transform: rotate(45deg);
+}
+
+div.keya,
+div.keyb,
+div.keyc,
+div.keyd,
+div.key,
+div.kay,
+div.kcy {
+    border: 1px solid #000;
+    color: #fff;
+    text-align: center;
+    background-color: #272727;
+    float: left;
+    cursor: pointer;
+}
+
+/* div.keya:hover,
+div.keyb:hover,
+div.keyc:hover,
+div.keyd:hover,
+div.key:hover,
+div.kay:hover,
+div.kcy:hover {
+    color: #000;
+    background-color: #0099ff;
+    box-shadow: inset -2px -2px #000;
+} */
+/*
+div.keya:active,
+div.keyb:active,
+div.keyc:active,
+div.keyd:active,
+div.key:active,
+div.kay:active,
+div.kcy:active {
+    color: #000;
+    background-color: #fff;
+    box-shadow: inset -2px -2px #000;
+}
+*/
+
+#Open:active {
+    color: #000;
+    background-color: #fff;
+    box-shadow: inset -2px -2px #000;
+}
+
+div.key {
+    margin-left: 8px;
+    margin-top: 8px;
+    width: 60px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 26px;
+    border-radius: 10px;
+    box-shadow: inset -1px -1px #bbbfc2;
+}
+
+div.kcy {
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 50px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: inset -1px -1px #bbbfc2;
+}
+
+div.es {
+    line-height: 16px;
+}
+
+div.kay {
+    margin-left: 2px;
+    margin-top: 6px;
+    width: 46px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 12px;
+    border-radius: 10px;
+    box-shadow: inset -1px -1px #bbbfc2;
+}
+
+div.kays {
+    margin-left: 30px;
+}
+
+
+div.keya,
+div.keyb,
+div.keyc,
+div.keyd {
+    margin-left: 7px;
+    margin-top: 5px;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    font-size: 24px;
+}
+
+div.keya {
+    border-radius: 42px 0 0 0;
+    box-shadow: inset -1px 0px #bbbfc2;
+}
+
+div.keyb {
+    border-radius: 0 30px 0 0;
+    box-shadow: inset -1px 0px #bbbfc2;
+}
+
+div.keyc {
+    border-radius: 0 0 0 30px;
+    box-shadow: inset -1px 0px #bbbfc2;
+}
+
+div.keyd {
+    border-radius: 0 0 42px 0;
+    box-shadow: inset -1px 0px #bbbfc2;
+}
