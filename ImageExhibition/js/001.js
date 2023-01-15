@@ -1,0 +1,11 @@
+var heads = document.head;
+var linkas = document.createElement("link");
+var scriptas = document.createElement("script");
+heads.appendChild(linkas);
+heads.appendChild(scriptas);
+linkas.rel = "stylesheet";
+linkas.type = "text/css";
+linkas.href = "./css/002.css";
+scriptas.type = "text/javascrpt";
+scriptas.defer = "defer";
+scriptas.src = "./js/002.js";
