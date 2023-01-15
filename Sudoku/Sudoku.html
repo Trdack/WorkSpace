@@ -1,0 +1,388 @@
+<!-- 
+    程序：数独
+    版本：1.0
+    作者：初尘
+ -->
+
+
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8" />
+    <title>数独</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .index {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            display: grid;
+            grid-template-columns: repeat(9, 10vh);
+            grid-template-rows: repeat(9, 10vh);
+            border: 1px solid #000;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+        }
+
+        .divas {
+            grid-column: span 3;
+            grid-row: span 3;
+            display: grid;
+            grid-template-columns: repeat(3, 10vh);
+            grid-template-rows: repeat(3, 10vh);
+            border: 0px solid #000;
+            vertical-align: bottom;
+            object-fit: cover;
+        }
+
+        .as1,
+        .as3,
+        .as5,
+        .as7,
+        .as9 {
+            background: #e9ebf8;
+        }
+
+        .divabs {
+            grid-column: span 1;
+            grid-row: span 1;
+            display: grid;
+            grid-template-columns: repeat(1, 10vh);
+            grid-template-rows: repeat(1, 10vh);
+            border: 1px solid #727d92;
+            vertical-align: bottom;
+            object-fit: cover;
+            font-size: 6vh;
+            line-height: 10vh;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="index" class="index"></div>
+</body>
+<script>
+
+    var Sys = null;
+    function Sudoku() { }
+    Sudoku.prototype = {
+        divas: [],//div大九宫格
+        divbs: [],//div小九宫格
+        divRowColumn: [],//div队列模式
+        numas: [],//横向
+        numbs: [],//纵向
+        numcs: [],//九宫
+        numds: [],//交叉
+        numSudoku: [],//完整数独
+        numSudokus: [],//挖空数独
+        numRows: [],//横向
+        numColumns: [],//纵向
+        numNinePalaces: [],//九宫
+        numOverlapping: [],//交叉
+        clicksId: [],
+        DivNinePalaceSubs: [],//DIV九宫坐标
+        Divtransformation: [[1, 2, 3], [4, 5, 6], [7, 8, 9]],
+        DivRowColumnSubs: [],//DIV行列坐标
+        DivColumnSubs: [],
+        DivRowSubs: [],
+        inputNumber: [],
+        grade: [46, 37, 31, 26],//等级:容易-中等-困难-专家
+        funNumas: function () {//初始化数组元素
+            for (var i = 0; i < 9; i++) {
+                Sys.numas.push([]);
+                Sys.numbs.push([]);
+                Sys.numcs.push([]);
+                Sys.numRows.push([]);
+                Sys.numColumns.push([]);
+                Sys.numNinePalaces.push([]);
+                if (i < 2) {
+                    Sys.numds.push([]);
+                    Sys.numOverlapping.push([]);
+                }
+                for (var j = 0; j < 9; j++) {
+                    Sys.numas[i][j] = j + 1;
+                    Sys.numbs[i][j] = j + 1;
+                    Sys.numcs[i][j] = j + 1;
+                    Sys.numRows[i][j] = "";
+                    Sys.numColumns[i][j] = "";
+                    Sys.numNinePalaces[i][j] = "";
+                    if (i < 2) {
+                        Sys.numds[i][j] = j + 1;
+                        Sys.numOverlapping[i][j] = "";
+                    }
+                }
+            }
+            //console.log(Sys.numRows);
+            Sys.funGenerateNumber();//生成九宫数独
+        },
+        funGenerateNumber: function GenerateNumber() {//生成九宫数独
+            function obtain(arr, n) {//从数组中随机获取n个元素
+                var Arrs = new Array();
+                for (var i = 0; i < arr.length; i++) {
+                    Arrs[i] = arr[i];
+                }
+                if (arr.length >= n) {
+                    var as = new Array();
+                    var bs = new Array();
+                    for (var i = Arrs.length; i > (Arrs.length - n); i--) {
+                        as.push(Math.floor(Math.random() * i));
+                    }
+
+                    for (var i = 0; i < n; i++) {
+                        bs[i] = Arrs.splice(as[i], 1);
+                    }
+                    return bs;
+                }
+            }
+            function rowGrouping(arr) {//数组Row矩阵化
+                var Rarr = new Array();
+                var arrs = new Array();
+                for (var i = 0; i < arr.length; i++) {
+                    arrs[i] = arr[i];
+                }
+                var n = Math.pow(arrs.length, 1 / 2);
+                for (var i = 0; i < n; i++) {
+                    Rarr.push([]);
+                    Rarr[i] = arrs.splice(0, n);
+                }
+                return Rarr;
+            }
+            function columnGrouping(arr) {//数组Column矩阵化
+                var Rarr = new Array();
+                var Carr = new Array();
+                var arrs = new Array();
+                for (var i = 0; i < arr.length; i++) {
+                    arrs[i] = arr[i];
+                }
+                var n = Math.pow(arrs.length, 1 / 2);
+                for (var i = 0; i < n; i++) {
+                    Rarr.push([]);
+                    Carr.push([]);
+                    Rarr[i] = arrs.splice(0, n);
+                    for (var j = 0; j < Rarr[i].length; j++) {
+                        Carr[j][i] = Rarr[i][j];
+                    }
+                }
+                return Carr;
+            }
+            /* 生成九宫数独 */
+            var nums;
+            var number;
+            var numbers;
+            var x, y;
+            for (var i = 0; i < 9; i++) {
+                for (var j = 0; j < 9; j++) {
+                    x = i - i % 3 + (j - j % 3) / 3;
+                    y = j % 3 + (i % 3) * 3;
+                    if (Sys.numRows[i][j] == "") {
+                        nums = Math.floor(Math.random() * Sys.numas[i].length);
+                    }
+                    nums = Math.floor(Math.random() * Sys.numas[i].length);
+                    number = Sys.numas[i][nums];
+                    console.log("数组长度：" + Sys.numas[i].length + ",随机数： " + nums);
+                    numbers = Sys.numas[i].splice(nums, 1)[0];
+                    if (Sys.numRows[i].includes(numbers) || Sys.numColumns[j].includes(numbers) || Sys.numNinePalaces[x].includes(numbers)) {
+                        Sys.numas[i].push(numbers);
+                        nums = Math.floor(Math.random() * Sys.numas[i].length);
+                        numbers = Sys.numas[i].splice(nums, 1);
+
+
+                    } else if (!Sys.numRows[i].includes(numbers) && !Sys.numColumns[j].includes(numbers) && !Sys.numNinePalaces[x].includes(numbers)) {
+                        Sys.numRows[i][j] = numbers;
+                        Sys.numColumns[j][i] = numbers;
+                        Sys.numNinePalaces[x][y] = numbers;
+                    }
+
+
+
+                }
+            }
+            /* 
+            for (var i = 0; i < 9; i++) {
+                for (var j = 0; j < 9; j++) {
+                    x = i - i % 3 + (j - j % 3) / 3;
+                    y = j % 3 + (i % 3) * 3;
+                    if (Sys.numRows[i][j] == "") {
+                        do {
+                            nums = Math.floor(Math.random() * Sys.numas[i].length);
+                            number = Sys.numas[i][nums];
+                        } while (!Sys.numRows[i].includes(number) && !Sys.numColumns[j].includes(number) && !Sys.numNinePalaces[x].includes(number))
+                        if (!Sys.numRows[i].includes(number) && !Sys.numColumns[j].includes(number) && !Sys.numNinePalaces[x].includes(number)) {
+                            Sys.numRows[i][j] = number;
+                            Sys.numColumns[j][i] = number;
+                            Sys.numNinePalaces[x][y] = number;
+                            numbers = Sys.numas[i].splice(nums, 1)[0];
+                        } else {
+
+                        }
+
+
+                    }
+
+                    console.log("数组长度：" + Sys.numas[i].length + ",随机数： " + nums);
+
+                    console.log(number + "," + numbers);
+                }
+
+
+            } */
+
+            console.log(Sys.numNinePalaces);
+            console.log(Sys.numColumns);
+            console.log(Sys.numRows);
+
+
+
+        },
+        funCursorMove: function CursorMove(direction) {//光标移动
+            var x = Sys.DivColumnSubs[0];
+            var y = Sys.DivColumnSubs[1];
+            switch (direction) {
+                case "left"://向左
+                    if (y > 0) {
+                        y--;
+                    } else {
+                        y = 8;
+                    }
+                    break;
+                case "up"://向上
+                    if (x > 0) {
+                        x--;
+                    } else {
+                        x = 8;
+                    }
+                    break;
+                case "right"://向右
+                    if (y < 8) {
+                        y++;
+                    } else {
+                        y = 0;
+                    }
+                    break;
+                case "down"://向下
+                    if (x < 8) {
+                        x++;
+                    } else {
+                        x = 0;
+                    }
+                    break;
+            }
+            Sys.DivColumnSubs[0] = x;
+            Sys.DivColumnSubs[1] = y;
+            Sys.funDCCNP();
+            Sys.funDCT.changeStyle();
+        },
+        funMaps: function Maps() {//生成网格地图
+            var index = document.getElementById("index");
+            for (var i = 0; i < 9; i++) {
+                Sys.divas[i] = document.createElement("div");
+                Sys.divbs.push([]);
+                index.appendChild(Sys.divas[i]);
+                Sys.divas[i].id = "divas" + i;
+                Sys.divas[i].className = "divas " + "as" + (i + 1);
+                for (var j = 0; j < 9; j++) {
+                    Sys.divbs[i][j] = document.createElement("div");
+                    Sys.divas[i].appendChild(Sys.divbs[i][j]);
+                    Sys.divbs[i][j].id = "divabs" + i + j;
+                    Sys.divbs[i][j].className = "divabs " + "abs" + i + j;
+                    Sys.divbs[i][j].innerHTML = Sys.numNinePalaces[i][j];
+                }
+            }
+        },
+        funDivSub: function DivSub() {//将获取的id值转换成对应数组元素的下标
+            Sys.DivNinePalaceSubs[0] = parseInt(Sys.clicksId[6]);
+            Sys.DivNinePalaceSubs[1] = parseInt(Sys.clicksId[7]);
+            //console.log(Sys.DivNinePalaceSubs);
+            Sys.funDNPCC();
+        },
+        funDNPCC: function () {//DivNinePalaceChangeColumn：九宫数组 ---> 行数组;
+            var i = Sys.DivNinePalaceSubs[0];
+            var j = Sys.DivNinePalaceSubs[1];
+            var x = i - i % 3 + (j - j % 3) / 3;
+            var y = j % 3 + (i % 3) * 3;
+            Sys.DivColumnSubs[0] = x;
+            Sys.DivColumnSubs[1] = y;
+            //console.log(Sys.DivColumnSubs);
+        },
+        funDCCNP: function () {//DivColumnChangeNinePalace:行数组 ---> 九宫数组;
+            var x = Sys.DivColumnSubs[0];
+            var y = Sys.DivColumnSubs[1];
+            var i = (x - x % 3) + (y - y % 3) / 3;
+            var j = (x % 3) * 3 + y % 3;
+            Sys.DivNinePalaceSubs[0] = i;
+            Sys.DivNinePalaceSubs[1] = j;
+            console.log(Sys.DivNinePalaceSubs);
+        },
+        funDCT: {//改变DIV样式:div-change-style
+            changeStyle: function changeStyle() {
+                var as = Sys.DivNinePalaceSubs[0];
+                var bs = Sys.DivNinePalaceSubs[1];
+                for (var i = 0; i < 9; i++) {
+                    for (var j = 0; j < 9; j++) {//清除所有样式
+                        Sys.divbs[i][j].style.background = "transparent";
+                        Sys.divbs[i][j].style.border = "1px solid #727d92";
+                    }
+                }
+                /* 重新加载样式 */
+                Sys.divbs[as][bs].style.background = "rgba(255,225,235,0.9)";
+                Sys.divbs[as][bs].style.border = "1px solid red";
+            },
+        },
+        funClicksId: document.onclick = function (event) { //鼠标点击触发
+            Sys.clicksId = ""; //清空之前获取的值。--->以防出现错误
+            var e = event || window.event;
+            var theId = e.target.id || e.srcElement.id; //获取鼠标点击元素ID值
+            //console.log(theId);
+            //console.log(theId.indexOf("divabs"));
+            if (theId && theId.indexOf("divabs") != -1) { //clicksId不为空时触发
+                Sys.clicksId = theId;
+                Sys.funDivSub();
+                Sys.funDCT.changeStyle(); //鼠标点击小九宫格时触发按键样式
+            }
+        },
+        funKeysId: document.onkeydown = function (event) {//键盘按键触发
+            Sys.inputNumber = "";
+            var e = event || window.event || arguments.callee.caller.arguments[0];
+            //var es = e || e.keyCode || e.which;
+            var es = e && e.keyCode; //获取键盘输入的按键值
+            //console.log(e);
+            //console.log(es);
+            if (es >= 97 && es <= 105) {
+                Sys.inputNumber = es - 96;
+            } else if (es >= 49 && es <= 57) {
+                Sys.inputNumber = es - 48;
+            } else if (es == 37 || es == 65) {//向左:方向键或A键
+                Sys.funCursorMove("left");
+            } else if (es == 38 || es == 87) {//向上:方向键或W键
+                Sys.funCursorMove("up");
+            } else if (es == 39 || es == 68) {//向右:方向键或D键
+                Sys.funCursorMove("right");
+            } else if (es == 40 || es == 83) {//向下:方向键或S键
+                Sys.funCursorMove("down");
+            } else {
+                return false;//禁用其它按键
+            }
+            //console.log(Sys.inputNumber);
+            console.log(Sys.DivColumnSubs);
+        },
+        funStart: function Start() {
+            Sys.funNumas();
+            Sys.funMaps();
+        },
+    }
+    window.onload = InitProgram;
+
+    function InitProgram() {
+        Sys = new Sudoku();
+        Sys.funStart();
+    }
+
+</script>
+
+</html>
