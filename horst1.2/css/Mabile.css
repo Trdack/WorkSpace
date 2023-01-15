@@ -1,0 +1,127 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.index {
+    width: 100%;
+    overflow: hidden;
+}
+
+.inatop {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    height: 50px;
+}
+
+.top {
+    margin: 0px auto;
+    padding: 0px;
+    height: 50px;
+}
+
+.logo,
+.logo a,
+.logo h1,
+.logo a:link,
+.logo a:visited {
+    width: 200px;
+    height: 60px;
+    background: transparent;
+}
+
+.logo {
+    margin: 0px auto;
+    float: left;
+}
+
+.logo a,
+.logo h1,
+.logo a:link,
+.logo a:visited {
+    margin: 0 auto;
+    padding: 0px;
+    border: 0px;
+}
+
+.logo a,
+.logo h1 {
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.logo a:link,
+a:visited {
+    display: block;
+    background: transparent url(./../bg/logo.gif) top left no-repeat;
+}
+
+.logo a:hover {
+    background: transparent url(./../bg/logo.gif) 0px -60px no-repeat;
+}
+
+.loca {
+    height: 30px;
+    background-color: #393d54;
+    padding-left: 10px;
+}
+
+.locations {
+    margin-left: 10px;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+
+.locations span {
+    color: #fff;
+}
+
+.locations a:link,
+.locations a:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.left {
+    height: 100px;
+    background-color: #fff;
+    display: none;
+}
+
+.middle {
+    background-color: #fff;
+}
+
+.middle img {
+    width: 50%;
+}
+
+.right {
+    display: none;
+}
+
+.gotop {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+}
+
+.bottom {
+    border-top: 1px solid #393d54;
+    min-height: 100px;
+    background-color: #ddd;
+    overflow: hidden;
+}

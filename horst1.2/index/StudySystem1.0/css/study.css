@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.index {
+    padding: 1px;
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+
+.forms {
+    width: 100%;
+    height: 100%;
+}
+
+.divas {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    display: none;
+    grid-template-columns: repeat(1, 100px);
+    grid-template-rows: repeat(6, 50px);
+    grid-gap: 5px;
+    border: 1px solid #000;
+    background: #000;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+
+
+.divas ul {
+    list-style: none;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(1, 100px);
+    grid-template-rows: repeat(6, 50px);
+    grid-gap: 10px;
+}
+
+.divas ul li {
+    display: inline-grid;
+    grid-row: span 1;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #fff;
+    width: 180px;
+    border-radius: 10px;
+    background-image: linear-gradient(#000, #fff, #000);
+    transform: skew(0deg);
+}
+
+.divas ul li:hover {
+    color: #ff6600;
+    background-image: linear-gradient(#282933, #fff, #282933);
+    cursor: pointer;
+}
+
+.divas ul li span {
+    display: inline-block;
+    margin: 0;
+    padding-right: 0px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 26px;
+    transform: skew(0deg);
+}
+
+.divbs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 1px;
+    width: 80%;
+    height: 100%;
+    border: 1px solid #0f0;
+    color: #fff;
+    text-align: center;
+    background: #000;
+}
+
+.divcs {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    border: 1px solid #000;
+    background: #000;
+}
+
+.displays {
+    display: inline-block;
+    margin: 100px auto;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    text-align: center;
+    background: transparent;
+}
+
+input.inas {
+    margin-top: 10px;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 40px;
+    color: #fff;
+    background: transparent;
+}

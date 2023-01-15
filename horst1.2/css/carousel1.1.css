@@ -1,0 +1,95 @@
+.index {
+  width: 100%;
+}
+
+.carousel {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  margin: 0 auto;
+  padding: 0px;
+  border: 0px solid #000;
+  width: 1000px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.carLeft,
+.carRight {
+  position: absolute;
+  top: 120px;
+  margin: 0 auto;
+  padding: 0;
+  border: 0px solid #000;
+  width: 30px;
+  height: 60px;
+  font-size: 30px;
+  line-height: 60px;
+  text-align: center;
+  cursor: default;
+  z-index: 99;
+}
+
+.carLeft {
+  left: 0px;
+  background: #ddd url("./../img/carousel/carLeft02.gif");
+  background-size: cover;
+}
+
+.carLeft:hover {
+  background: #000 url("./../img/carousel/carLeft01.gif");
+  background-size: cover;
+}
+
+.carRight {
+  right: 0px;
+  background: #ddd url("./../img/carousel/carRight02.gif");
+  background-size: cover;
+}
+
+.carRight:hover {
+  background: #000 url("./../img/carousel/carRight01.gif");
+  background-size: cover;
+}
+
+#div0,
+#div1,
+#div2,
+#div3,
+#div4,
+#div5,
+#div6,
+#div7,
+#div8,
+#div9 {
+  position: absolute;
+  top: 20px;
+  left: 200px;
+  margin: 0;
+  padding: 0;
+  border-radius: 20px;
+  width: 600px;
+  height: 260px;
+  background: transparent;
+  transition: all 1.5s;
+  display: none;
+  z-index: -1;
+}
+
+.diva,
+.divb {
+  position: absolute;
+  margin: 0;
+  padding: 0px solid #000;
+  background: transparent;
+  transition: all 1s;
+  -ms-transition: all 1s;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+}
+
+.carousel img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
