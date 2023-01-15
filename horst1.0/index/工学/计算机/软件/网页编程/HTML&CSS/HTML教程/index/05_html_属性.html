@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>HTML_属性</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8;" />
+	<meta http-equiv="Content-Language" content="zh-CN" />
+	<script type="text/javascript" src="./../js/index.js"></script>
+</head>
+
+<body>
+	<div class="index">
+		<!--顶层-->
+		<div id="inatop" class="inatop"></div>
+		<!--位置-->
+		<div id="loca" class="loca"></div>
+		<!--左边-->
+		<div id="left"></div>
+		<!--中间-->
+		<div class="middle">
+			<!--上下翻页、目录-->
+			<div id="flipa" class="flip"></div>
+			<!--主体-->
+			<div class="subject">
+				<div class="bkc">
+					<h2>HTML_属性</h2>
+				</div>
+				<div class="bkc">
+					<p><strong>属性为HTML元素提供附加信息。</strong></p>
+				</div>
+				<div class="bkc">
+					<h2>HTML属性</h2>
+					<p>HTML元素可设置属性。</p>
+					<p>属性可以在元素中添加附加信息。</p>
+					<p>HTML标签可以拥有<em>属性</em>。属性提供了有关HTML元素的<em>更多的信息</em>。</p>
+					<p>属性总是以名称/值对的形式出现，比如：<em>name=&#34;value&#34;</em>。</p>
+					<p>属性总是在HTML元素的<em>开始标签</em>中规定。</p>
+					<p class="pa">&lt;标签 属性="值"&gt;内容&lt;/标签&gt;</p>
+				</div>
+				<div class="bkc">
+					<h2>属性实例</h2>
+					<p>HTML链接由&#60;a&#62;标签定义。链接的地址在href属性中指定：</p>
+					<div class="codes">
+						<p class="p1">&#60;a href=&#34;http://www.baidu.com &#34;&#62;这是百度的链接&#60;/a&#62;</p>
+					</div>
+				</div>
+				<div class="bkc">
+					<h2>更多HTML属性实例</h2>
+					<h3>属性实例1：</h3>
+					<p>&#60;h1&#62;定义标题的开始。</p>
+					<p>&#60;h1 algin=&#34;center&#34;&#62;拥有关于对其方式的附加信息。</p>
+					<div class="codes">
+						<p class="p1">&#60;h1 algin=&#34;center&#34;&#62;标题H1&#60;/h1&#62;</p>
+					</div>
+					<p><span>注释：</span>algin="center"表示<em>居中对齐</em>。</p>
+					<h3>属性实例2：</h3>
+					<p>&#60;body&#62;定义HTML文档的主体。</p>
+					<p>&#60;body bgcolor=&#34;yellow&#34;&#62;拥有关于背景颜色的附加信息。</p>
+					<div class="codes">
+						<p class="p1">&#60;body bgcolor=&#34;yellow&#34;&#62;</p>
+						<p class="p2">&#60;h1 algin=&#34;center&#34;&#62;背景属性&#60;/h1&#62;</p>
+						<p class="p2">&#60;p&#62;bgcolor是背景属性，yellow是属性值，表示黄色。&#60;/p&#62;</p>
+						<p class="p1">&#60;/body&#62;</p>
+					</div>
+					<p><span>注释：</span>bgcolor=&#34;yellow&#34;表示<em>背景颜色</em>为黄色。</p>
+					<h3>属性实例3：</h3>
+					<p>&#60;table&#62;定义HTML表格。(您将在稍后的章节学习到更多有关HTML表格的内容)</p>
+					<p>&#60;table border=&#34;1px&#34;&#62;拥有关于表格边框的附加信息。</p>
+					<p><span>注释：</span>border定义元素的<em>边框属性</em>，1px表示<em>线宽</em>，px(单位)表示<em>像素</em>。</p>
+				</div>
+				<div class="bkc">
+					<h2>HTML提示：使用小写属性</h2>
+					<p>属性和属性值对大小写<em>不敏感</em>。</p>
+					<p>不过，万维网联盟在其HTML4推荐标准中推荐小写属性/属性值。</p>
+					<p>而新版的(X)HTML要求使用小写属性。</p>
+				</div>
+				<div class="bkc">
+					<h2>始终为属性值加引号</h2>
+					<p>属性值应该始终被包括在引号内。</p>
+					<p>双引号是最常用的，不过使用单引号也没有问题。</p>
+					<p><span>提示：</span>在某些个别的情况下属性值本身就含有双引号，那么您必须使用单引号。</p>
+					<h3>例如：</h3>
+					<div class="codes">
+						<p class="p1">name='Bill&#34;HelloWorld&#34;Gates'</p>
+					</div>
+				</div>
+				<div class="bkc">
+					<h2>HTML属性参考手册</h2>
+					<p>HTML参考手册提供了每个HTML元素使用的合法属性的完整列表：</p>
+					<p><a href="#" title="HTML4.01/XHTML1.0参考手册">《完整的HTML参考手册》</a></p>
+					<p>下面列出了适用于大多数HTML元素的属性：</p>
+					<table class="dataintable">
+						<tr>
+							<th>属性</th>
+							<th>值</th>
+							<th>描述</th>
+						</tr>
+						<tr>
+							<td>class</td>
+							<td><i>classname</i></td>
+							<td>规定元素的类名(classname)</td>
+						</tr>
+						<tr>
+							<td>id</td>
+							<td><i>id</i></td>
+							<td>定义元素唯一id</td>
+						</tr>
+						<tr>
+							<td>style</td>
+							<td><i>style_definition</i></td>
+							<td>规定元素的行内样式(inline style)</td>
+						</tr>
+						<tr>
+							<td>title</td>
+							<td><i>text</i></td>
+							<td>规定元素的额外信息(可在工具提示中显示)</td>
+						</tr>
+					</table>
+					<p>如需更多关于标准属性的信息，请访问：</p>
+					<p><a href="./#.html" title="HTML标准属性">HTML标准属性参考手册</a></p>
+				</div>
+			</div>
+			<!--上下翻页、目录-->
+			<div id="flipb" class="flip"></div>
+		</div>
+		<!--右边-->
+		<div id="right"></div>
+		<!--gotop-->
+		<div id="gotop"></div>
+		<!--网站声明-->
+		<div id="bottom" class="bottom"></div>
+	</div>
+</body>
+
+</html>

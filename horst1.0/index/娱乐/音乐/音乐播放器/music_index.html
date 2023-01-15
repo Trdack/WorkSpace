@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!--
+[音乐：miusic]|[播放器：player]|[控件：controls]|[插件：Plugin]|[]
+
+-->
+
+<head>
+  <meta charset="UTF-8" />
+  <title>音乐播放器</title>
+  <link rel="stylesheet" type="text/css" href="./css/music.css" />
+  <script type="text/javascript" defer="defer" src="./js/music_css.js"></script>
+  <script type="text/javascript" defer="defer" src="./js/music.js"></script>
+  <!-- 
+  <script type="text/javascript" defer="defer" src="./js/music01.js"></script> -->
+  <script type="text/javascript" defer="defer" src="./js/SongLyric.js"></script>
+</head>
+
+<body>
+  <div id="index" class="index">
+    <audio src="" id="mymusic"></audio>
+    <div class="music" id="mc">
+      <div class="music_aa" id="mc_">
+        <!-- 唱片头像-旋转 -->
+        <div class="music_aaa" id="">
+          <img src="./images/player_bg/唱片.gif" alt="" class="disc" id="disc" />
+        </div>
+        <div class="music_aab">
+          <div class="music_aaba">
+            <span class="music_name" id="mc_name"></span><span class="music_nsfg"></span><span class="music_songer"
+              id="mc_songer"></span>
+          </div>
+          <div class="music_aabb">
+            <div class="music_aabba" id="currenttime">00:00</div>
+            <div class="music_aabbb">
+              <div class="music_aabbba">
+                <div class="music_aabbbaa" id="prograss"></div>
+              </div>
+            </div>
+            <div class="music_aabbc" id="duration">00:00</div>
+          </div>
+          <div class="music_aabc">
+            <div class="music_aabca" id="mode_mc" talt="0">
+              <div class="mode1" id="mode_mc1"></div>
+            </div>
+            <div class="music_aabcb" id="back_mc"></div>
+            <div class="music_aabcc" id="playpause"></div>
+            <div class="music_aabcd" id="next_mc"></div>
+            <div class="music_aabce" id="listIng_mc"></div>
+            <div class="music_aabcf" id="volume_mc"></div>
+          </div>
+        </div>
+      </div>
+      <div class="music_ab"></div>
+    </div>
+  </div>
+</body>
+
+</html>

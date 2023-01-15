@@ -1,0 +1,112 @@
+/*
+index_01.css
+构筑网页主体结构的CSS文本
+样式一
+*/
+
+
+html {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	min-width: 100%;
+	min-height: 100%;
+	background: #f5f8ff;
+}
+
+.index {
+	margin: 0 auto;
+	padding: 0px;
+	border: 0px solid #000;
+	min-width: 100%;
+	min-height: 800px;
+	background: transparent;
+}
+
+.top {
+	margin: 0 auto;
+	padding: 1px;
+	border: 0px;
+	border-bottom: 1px solid #000;
+	height: 40px;
+	background: transparent;
+}
+
+.motoment {
+	margin: 0 auto;
+	padding: 1px;
+	border: 0px;
+	height: 600px;
+	background: transparent;
+}
+
+.end {
+	margin: 0 auto;
+	padding: 1px;
+	border: 0px;
+	height: 110px;
+	background: transparent;
+}
+
+.location {
+	margin: 5px auto;
+	padding: 1px;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	height: 30px;
+	line-height: 30px;
+	background: #afafaf;
+	text-indent: 5px;
+	word-spacing: 0px;
+	line-height: 30px;
+	overflow: hidden;
+}
+
+.location a {
+	padding: 10px 5px 10px 4px;
+	font-weight: bold;
+	font: normal bold 22px "仿宋", "Courier New";
+}
+
+.location span {
+	padding: 10px 0px;
+	color: #000;
+	font-weight: bold;
+	text-shadow: 1px 0.5px 1px #fff;
+}
+
+.location a:link,
+.location a:visited {
+	color: #000;
+	text-decoration: none;
+	word-spacing: -10px;
+	text-shadow: 1px 0.5px 1px #fff;
+}
+
+.location a:hover,
+.location a:active {
+	background: #1a2a3a;
+	color: #fff;
+	text-shadow: 1px 0.5px 1px #fa0;
+}
+
+.divak,
+.divbk,
+.divck,
+.divdk,
+.divek,
+.divmk {
+	margin: 5px auto;
+	padding: 0px;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	overflow: hidden;
+}

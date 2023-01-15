@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>音乐播放器</title>
+    <link rel="stylesheet" href="./css/music.css" />
+  </head>
+
+  <body>
+    <audio src="" id="mymusic"></audio>
+    <!-- 音乐控件 -->
+    <div class="music">
+      <div class="pic_div">
+        <!-- <img src="images/music/pictures/disc.png" alt="" class="disc" /> -->
+        <img src="images/music/pictures/唱片.gif" alt="" class="disc" />
+        <!-- <img src="images/music/pictures/default.jpg" alt="" id="music_pic" /> -->
+        <span class="dot"></span>
+        <div class="music_program">
+          <div id="prograss"></div>
+        </div>
+        <div class="time">
+          <p>
+            <span id="currenttime">0:00</span><span>/</span
+            ><span id="duration">0:00</span>
+          </p>
+        </div>
+        <div class="music_menu">
+          <span onClick="backMusic()">
+            <img src="./images/上一曲.gif" width="60px" height="60px"
+          /></span>
+          <span onClick="playPause()" id="playbtn">
+            <img src="./images/播放.gif" width="60px" height="60px"
+          /></span>
+          <span onClick="nextMusic()">
+            <img src="./images/下一曲.gif" width="60px" height="60px"
+          /></span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/music.js"></script>
+</html>

@@ -1,0 +1,333 @@
+.flip {
+	margin: 0px auto;
+	margin-bottom: 10px;
+	padding: 0px;
+	border: 0px solid #000;
+	width: 100%;
+	height: 36px;
+	float: center;
+}
+
+.fcn {
+	margin: 0px auto;
+	padding: 0px;
+	border: 0px solid #000;
+	width: 370px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	font-size: 32px;
+	overflow: hidden;
+	background: transparent;
+}
+
+.forth,
+.catalog,
+.next {
+	margin: 0px auto;
+	padding: 0px;
+	border: 1px solid #000;
+	width: 100px;
+	height: 34px;
+	line-height: 34px;
+	background: #fff;
+	float: left;
+}
+
+.catalog,
+.next {
+	margin-left: 20px;
+}
+
+.fcn a {
+	width: 100px;
+	height: 34px;
+	line-height: 34px;
+}
+
+.fcn a:link,
+a:visited {
+	display: inline-block;
+	text-decoration: none;
+	padding: 0px;
+	color: #000;
+	background: #fff;
+}
+
+.fcn a:hover {
+	color: #fff;
+	background: #0f0f0f;
+}
+
+.subject {
+	margin: 0px auto;
+	margin-bottom: 10px;
+	padding: 0px;
+	border: 1px solid #000;
+	width: 1000px;
+	min-height: 10px;
+	background: transparent;
+}
+
+
+.subject>.bkc {
+	margin: 5px;
+	padding: 0px;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	color: #181e66;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0px auto;
+	padding: 0px;
+	border: 0px solid #000;
+	text-shadow: 1px 1px 1px #000;
+}
+
+h1 {
+	font-size: 42px;
+	line-height: 60px;
+	background: #e9ecff;
+	color: #333;
+}
+
+
+h2 {
+	font-size: 36px;
+	line-height: 50px;
+	color: #555;
+}
+
+h3 {
+	font-size: 30px;
+	line-height: 40px;
+	color: #8e90a1;
+}
+
+h4 {
+	font-size: 24px;
+	color: #aaa;
+}
+
+h5 {
+	font-size: 18px;
+	color: #bbb;
+}
+
+h6 {
+	font-size: 12px;
+	color: #eee;
+}
+
+p {
+	margin: 10px auto;
+	padding: 0px;
+	border: 0px solid #000;
+	text-indent: 36px;
+	line-height: 26px;
+	font-size: 24px;
+	font-family: 宋体;
+}
+
+.codes {
+	margin: 5px auto;
+	padding: 10px;
+	border: 1px solid #000;
+	background: #101010;
+	color: #fff;
+}
+
+.p1,
+.p2,
+.p3,
+.p4,
+.p5,
+.p6,
+.p7,
+.p8 {
+	margin: 0px;
+	padding: 0px;
+	border: 0px solid #000;
+	line-height: 22px;
+	font-size: 20px;
+	font-family: 宋体;
+}
+
+.p1 {
+	text-indent: 0px;
+}
+
+.p2 {
+	text-indent: 36px;
+}
+
+.p3 {
+	text-indent: 72px;
+}
+
+.p4 {
+	text-indent: 108px;
+}
+
+.p5 {
+	text-indent: 144px;
+}
+
+.p6 {
+	text-indent: 180px;
+}
+
+.p7 {
+	text-indent: 216px;
+}
+
+.p8 {
+	text-indent: 252px;
+}
+
+.bkc ul {
+	margin: 0px auto;
+	padding-top: 0px;
+	padding-bottom: 10px;
+}
+
+.bkc ul li {
+	margin: 0px auto;
+	padding: 0px;
+	border: 0px solid #000;
+	line-height: 24px;
+	font-size: 24px;
+	font-family: 宋体;
+}
+
+em {
+	color: #ff8400;
+}
+
+b {
+	color: #000;
+}
+
+.bkc img {
+	margin: 0px auto;
+	padding: 0px;
+	border: 0px solid #000;
+	border-top: 1px solid #000;
+	border-left: 1px solid #000;
+	max-width: 100%;
+	box-shadow: 10px 10px 10px #999;
+}
+
+
+strong {
+	margin: 0 auto;
+	padding: 10px auto;
+	font-size: 24px;
+}
+
+.bkc span.s1 {
+	font-family: 仿宋;
+	color: #ff8400;
+	background: #000;
+}
+
+.bkc p span {
+	font-family: 楷书;
+	font-weight: bold;
+	color: #ff8400;
+}
+
+.pa,
+.pb {
+	margin: 10px auto;
+	padding: 0px;
+	border: 1px solid #5d41db;
+	text-indent: 36px;
+	line-height: 60px;
+	font-size: 36px;
+	font-family: 宋体;
+}
+
+
+.pa {
+	background: #ebebeb;
+	color: #ff9100;
+}
+
+.pb {
+	border: 0px;
+	padding-left: 10px;
+	text-indent: 0px;
+	line-height: 30px;
+	font-size: 24px;
+}
+
+
+table.dataintable {
+	margin: 5px auto;
+	padding: 0px;
+	border-collapse: collapse;
+	border: 1px solid #000;
+	width: 100%;
+}
+
+table.dataintable tr:nth-child(2n+1) {
+	background-color: #e8eee5;
+}
+
+table.dataintable tr:nth-child(2n) {
+	background-color: #fff;
+}
+
+table.dataintable th {
+	vertical-align: baseline;
+	padding: 5px;
+	background: #3f3f3f;
+	border: 1px solid #000;
+	text-align: left;
+	font-size: 20px;
+	font-family: 仿宋;
+	color: #fff;
+}
+
+table.dataintable td {
+	vertical-align: text-top;
+	padding: 5px;
+	border: 1px solid #000;
+	font-size: 20px;
+	font-family: 仿宋;
+}
+
+div.k1,
+div.k2,
+div.k3,
+div.t1,
+div.t2,
+div.t3 {
+	margin: 0px 10px;
+	padding: 0px 10px;
+	border: 1px solid #000;
+}
+
+div.k1 {
+	width: calc(100% - 32px);
+	margin: 0px auto;
+	margin-bottom: 5px;
+	background: #ddd;
+	box-shadow: 1px 1px 30px #999;
+}
+
+div.t2 {
+	background: #fff;
+}
+
+div.k1 p.pb {
+	text-indent: 0;
+	font-size: 20px;
+}

@@ -1,0 +1,97 @@
+/*
+mulu_01.css
+mulu目录样式
+样式一
+*/
+
+.mulu {
+	margin: 0 auto;
+	padding: 0px;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	width: 1000px;
+	background: #fff;
+}
+
+.divak {
+	padding-bottom: 20px;
+}
+
+.divak ul {
+	margin: 0 auto;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+.divak h1,
+.divak h2,
+.divak h3,
+.divak h4,
+.divak h5,
+.divak h6 {
+	margin: 8px 12px;
+	padding-top: 20px;
+	border-bottom: 3PX dashed #adabff;
+}
+
+.divak ul li {
+	margin: 1px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 1px dashed #8d8bff;
+	list-style: none;
+	width: 240px;
+	line-height: 30px;
+	float: left;
+	background: #fdfaf6;
+	overflow: hidden;
+	/* 不换行 */
+	white-space: nowrap;
+	/* 省略 */
+	text-overflow: ellipsis;
+}
+
+.divak a:link,
+.divak a:visited {
+	color: #000;
+	font-size: 20px;
+	line-height: 28px;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #0f0f0f;
+}
+
+.divak a:hover,
+.divak a:active {
+	font-size: 20px;
+	line-height: 28px;
+	color: #fff;
+	text-shadow: 1px 1px 2px #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-indent: 20px;
+	font: normal bold "宋体", "Courier New";
+	color: #666;
+	text-shadow: 1px 0.5px 1px black;
+	line-height: 40px;
+}
+
+
+
+li {
+	text-indent: 12px;
+	word-spacing: -5px;
+	font: normal bold 22px "楷书", "Courier New";
+	color: #6f6f6f;
+	text-shadow: 1px 1px 1px #10f;
+}
+
+strong {
+	color: #ff7200;
+	font: normal bold 22px "宋体", "Courier New";
+}

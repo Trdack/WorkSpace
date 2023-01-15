@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>id 选择器</title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <!-- 外链css文件 -->
+  <link rel="stylesheet" type="text/css" href="./../../css/index_01.css" />
+  <link rel="stylesheet" type="text/css" href="./../../css/ibook_01.css" />
+</head>
+
+<body>
+  <!--  总层  -->
+  <div id="index" class="index">
+    <div class="ibooks">
+      <div class="divck">
+        <h1>id 选择器</h1>
+      </div>
+      <div class="location">
+        <span>=>></span>
+        <a href="./../../web_index.html">网页编程</a>
+        <span>-></span>
+        <a href="./../CSS_index.html">CSS</a>
+        <span>-></span>
+        <a href="./CSS05.html">id 选择器</a>
+      </div>
+      <div class="divck">
+        <h2>id 选择器</h2>
+        <p class="p1">id 选择器可以为标有特定 id 的 HTML 元素指定特定的样式。</p>
+        <p class="p1">id 选择器以"#"来定义。</p>
+        <p>下面的两个 id 选择器，第一个可以定义元素的颜色为红色，第二个定义元素的颜色为绿色：</p>
+        <div class="prex">
+          <ol>
+            <li>#red {color: red;}</li>
+            <li>#green {color: green;}</li>
+          </ol>
+        </div>
+        <p>下面是 HTML 代码中，id 属性为 red 的 p 元素显示为红色，而 id 属性为 green 的 p 元素显示为绿色。</p>
+        <div class="prex">
+          <ol>
+            <li>&lt;p id="red"&gt;这个段落是红色。&lt;/p&gt;</li>
+            <li>&lt;p id="green"&gt;这个段落是绿色。&lt;/p&gt;</li>
+          </ol>
+        </div>
+        <p><strong>注意：</strong>id 属性只能在每个 HTML 文档中出现一次。(详情参阅：<a href="#">XHTML:网站重构。</a>)</p>
+      </div>
+      <div class="divck">
+        <h2>id 选择器和派生选择器</h2>
+        <p class="p1">在现代布局中，id 选择器常常用于建立派生选择器。</p>
+        <div class="prex">
+          <ol>
+            <li>#sidebar p {</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;font-style: italic;</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;text-align: right;</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;margin-top: 0.5em;</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;}</li>
+            <li></li>
+            <li>#sidebar h2 {</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;font-size: 1em;</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;font-weight: normal;</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;font-style: italic;</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;margin: 0px;</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;line-height: 1.5em;</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;text-align: right;</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;}</li>
+          </ol>
+        </div>
+        <p>在这里，与页面中的其他 p 元素明显不同的是，siderbar 内的 p 元素得到了特殊处理，同时，与页面中其他所有 h2 元素明显不同的是，siderbar 中的 h2 元素也得到了不同的特殊处理。</p>
+      </div>
+      <div class="divck">
+        <h2>单独的选择器</h2>
+        <p class="p1">id 选择器即使不被用来创建派生选择器，它也可以独立发挥作用：</p>
+        <div class="prex">
+          <ol>
+            <li>#sidebar {</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;border: 1px dotted #000;</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;padding: 10px;</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;}</li>
+          </ol>
+        </div>
+        <p>根据这条规则，id 为 sidebar 的元素将拥有一个像素的黑点状边框，同时其周围会有10个像素宽的内边距(padding,内部空白)。老版本的 Windows/IE
+          浏览器可能会忽略这条规则，除非我们特别地定义这个选择器所属的元素：</p>
+        <div class="prex">
+          <ol>
+            <li>div#sibedar {</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;border: 1px dotted #000;</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;padding: 10px;</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;}</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

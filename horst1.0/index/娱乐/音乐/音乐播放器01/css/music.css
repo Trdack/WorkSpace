@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+html {
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid red;
+}
+
+
+/* CSS Document */
+.music {
+    height: 900px;
+    background: rgba(98, 91, 91, 0.9);
+}
+
+.pic_div {
+    margin: 0px auto;
+    width: 80%;
+    height: 900px;
+    background: #000;
+    position: relative;
+}
+
+.dot {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #fff;
+    background: #ffffff;
+    position: absolute;
+    border-radius: 50%;
+    top: 40px;
+    left: 85px;
+}
+
+.disc {
+    width: 150px;
+    border: 1px solid #fff;
+    position: absolute;
+    left: 85px;
+    top: 40px;
+    transform: rotate(0deg);
+    background: transparent;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+#music_pic {
+    width: 150px;
+    background: red;
+    position: absolute;
+}
+
+.music_program {
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    position: relative;
+    top: 300px;
+}
+
+.music_program div {
+    height: 100%;
+    width: 0%;
+    background: red;
+}
+
+.time {
+    width: 100px;
+    height: 20px;
+    position: relative;
+    top: 308px;
+    left: calc(100% - 180px);
+    overflow: hide;
+    color: #fff;
+}
+
+.time p {
+    padding-left: 33px;
+}
+
+.time p span:nth-of-type(2) {
+    padding: 0 5px;
+}
+
+.music_menu {
+    margin: 0px auto;
+    width: 50%;
+    height: 50px;
+    position: relative;
+    top: 330px;
+    background: transparent;
+}
+
+.music_menu span {
+    margin: 0px auto;
+    width: 60px;
+    height: 60px;
+    background: red;
+    display: inline-block;
+    /* cursor: pointer; */
+}
+
+.music_menu span:nth-of-type(1) {
+    background: transparent;
+}
+
+.music_menu span:nth-of-type(2) {
+    background: transparent
+}
+
+.music_menu span:nth-of-type(3) {
+    background: transparent;
+}

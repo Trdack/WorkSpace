@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>HTML_样式</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8;" />
+	<meta http-equiv="Content-Language" content="zh-CN" />
+	<script type="text/javascript" src="./../js/index.js"></script>
+</head>
+
+<body>
+	<div class="index">
+		<!--顶层-->
+		<div id="inatop" class="inatop"></div>
+		<!--位置-->
+		<div id="loca" class="loca"></div>
+		<!--左边-->
+		<div id="left"></div>
+		<!--中间-->
+		<div class="middle">
+			<!--上下翻页、目录-->
+			<div id="flipa" class="flip"></div>
+			<!--主体-->
+			<div class="subject">
+				<div class="bkc">
+					<h1>HTML样式</h1>
+				</div>
+				<div class="bkc">
+					<p>style属性用于改版HTML元素的样式。</p>
+					<div class="codes">
+						<p class="p1">&#60;span style=&#34;font-family:verdana;color:red&#34;&#62;This text is in
+							Verdana and red.&#60;/span&#62;</p>
+						<p class="p1">&#60;span style=&#34;font-family:times;color:blue&#34;&#62;This text is in Times
+							and blue.&#60;/span&#62;</p>
+						<p class="p1">&#60;span sytle=&#34;font-size:30px&#34;&#62;This text is 30 pixels
+							high&#60;/span&#62;</p>
+					</div>
+				</div>
+				<div class="bkc">
+					<h3>显示结果：</h3>
+					<span style="font-family:verdana;color:red">This text is in Verdana and red</span>
+					<br />
+					<span style="font-family:times;color:blue">This text is in Times and blue</span>
+					<br />
+					<span style="font-size:30px">This text is 30 pixels high</span>
+				</div>
+				<div class="bkc">
+					<h2>HTML的style属性</h2>
+					<p>style属性的作用：</p>
+					<p><strong>提供了一种改变所有HTML元素样式的通用方法。</strong></p>
+					<p>样式是HTML4引入的，它是一种新的首选的改变HTML元素样式的方式。通过HTML样式，能够通过使用style属性直接将样式添加到HTML元素，或者间接地在独立的样式中（CSS文件）进行定义。
+					</p>
+					<p>您可以在<a href="">CSS教程</a>中学习关于样式和CSS的所有知识。</p>
+					<p>在HTML教程中，将使用style属性为你讲解HTML样式。</p>
+				</div>
+				<div class="bkc">
+					<h2>不赞成使用的标签和属性</h2>
+					<p>在HTML4中，有若干的标签和属性是被废弃的。被废弃（Deprecated）的意思是在未来版本的HTML和XHTML中将不支持这些标签和属性。</p>
+					<p>这里传达的信息很不明确：请避免使用这些被废弃的标签和属性！</p>
+					<h3>应该避免使用下面这些标签和属性：</h3>
+					<table class="dataintable">
+						<tr>
+							<th style="width:40%;">标签</th>
+							<th>描述</th>
+						</tr>
+						<tr>
+							<td>&#60;center&#62;</td>
+							<td>定义居中的内容。</td>
+						</tr>
+						<tr>
+							<td>&#60;font&#62;和&#60;basefont&#62;</td>
+							<td>定义HTML字体</td>
+						</tr>
+						<tr>
+							<td>&#60;s&#62;和&#60;strike&#62;</td>
+							<td>定义删除线文本</td>
+						</tr>
+						<tr>
+							<th>属性</th>
+							<th>描述</th>
+						</tr>
+						<tr>
+							<td>align</td>
+							<td>定义文本的对齐方式</td>
+						</tr>
+						<tr>
+							<td>bgcolor</td>
+							<td>定义背景颜色</td>
+						</tr>
+						<tr>
+							<td>color</td>
+							<td>定义文本颜色</td>
+						</tr>
+					</table>
+					<p>对于以上这些标签和属性：请使用样式代替！</p>
+				</div>
+				<div class="bkc">
+					<h2>HTML样式实例 - 背景颜色</h2>
+					<p>background-color属性为元素定义了背景颜色：</p>
+					<div class="codes">
+						<p class="p1">&#60;!DOCTYPE html&#62;</p>
+						<p class="p1">&#60;html&#62;</p>
+						<p class="p1">&#60;body style=&#34;backround-color:yellow&#34;&#62;</p>
+						<p class="p2">&#60;h2 style=&#34;background-color:red&#34;&#62;This is a heading.&#60;/h2&#62;
+						</p>
+						<p class="p2">&#60;p style-&#34;background-color:green&#34;&#62;This is a paragraph.&#60;/p&#62;
+						</p>
+						<p class="p1">&#60;/body&#62;</p>
+						<p class="p1">&#60;/html&#62;</p>
+					</div>
+					<p>style属性淘汰了”旧的“bacolor属性。</p>
+				</div>
+				<div class="bkc">
+					<h2>HTML样式实例 - 字体、颜色和尺寸</h2>
+					<p>font-family、color以及font-size属性分别定义元素中文本的字体系列、颜色和字体尺寸。</p>
+					<div class="codes">
+						<p class="p1">&#60;!DOCTYPE html&#62;</p>
+						<p class="p1">&#60;html&#62;</p>
+						<p class="p1">&#60;body&#62;</p>
+						<p class="p2">&#60;h1 style=&#34;font-family:verdana&#34;&#62;A heading&#60;/h1&#62;</p>
+						<p class="p2">&#60;p sytle=&#34;font-family:arial;color:red;font-size:20px;&#34;&#62;A
+							paragraph.&#60;/p&#62;</p>
+						<p class="p1">&#60;/body&#62;</p>
+						<p class="p1">&#60;/html&#62;</p>
+					</div>
+					<p>style属性淘汰了旧的&#60;font&#62;标签。</p>
+				</div>
+				<div class="bkc">
+					<h2>HTML样式实例 - 文本对齐</h2>
+					<p>text-align属性规定了元素中文本的水平对齐方式：</p>
+					<div class="codes">
+						<p class="p1">&#60;!DOCTYPE html&#62;</p>
+						<p class="p1">&#60;html&#62;</p>
+						<p class="p1">&#60;body&#62;</p>
+						<p class="p2">&#60;h1 style=&#34;text-align:center&#34;&#62;This is a heading&#60;/h1&#62;</p>
+						<p class="p2">&#60;p&#62;The heading above is aligned to the center of this page.&#60;/p&#62;
+						</p>
+						<p class="p1">&#60;/body&#62;</p>
+						<p class="p1">&#60;/html&#62;</p>
+					</div>
+					<p>style属性淘汰了旧的&#34;algin&#34;属性。</p>
+				</div>
+			</div>
+			<!--上下翻页、目录-->
+			<div id="flipb" class="flip"></div>
+		</div>
+		<!--右边-->
+		<div id="right"></div>
+		<!--gotop-->
+		<div id="gotop"></div>
+		<!--网站声明-->
+		<div id="bottom" class="bottom"></div>
+	</div>
+</body>
+
+</html>

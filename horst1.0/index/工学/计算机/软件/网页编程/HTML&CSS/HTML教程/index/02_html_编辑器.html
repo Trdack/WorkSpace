@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>HTML_编辑器</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8;" />
+	<meta http-equiv="Content-Language" content="zh-CN" />
+	<script type="text/javascript" src="./../js/index.js"></script>
+</head>
+
+<body>
+	<div class="index">
+		<!--顶层-->
+		<div id="inatop" class="inatop"></div>
+		<!--位置-->
+		<div id="loca" class="loca"></div>
+		<!--左边-->
+		<div id="left"></div>
+		<!--中间-->
+		<div class="middle">
+			<!--上下翻页、目录-->
+			<div id="flipa" class="flip"></div>
+			<!--主体-->
+			<div class="subject">
+				<div class="bkc">
+					<h1>HTML 编辑器</h1>
+				</div>
+				<div class="bkc">
+					<h2>使用 Notepad 或 TextEdit 来编写 HTML</h2>
+					<p>可以使用专业的 HTML 编辑器来编辑 HTML：</p>
+					<ul>
+						<li>Adobe Dreamweaver</li>
+						<li>Microsoft Expression Web</li>
+						<li>CoffeeCup HTML Editor</li>
+						<li>VS Code:<a href="https://code.visualstudio.com/"
+								title="VisualStudio Code">https://code.visualstudio.com/</a></li>
+						<li>Sublime Text:<a href="http://www.sublimetext.com/"
+								title="Sublime Text">http://www.sublimetext.com/</a>
+						</li>
+					</ul>
+					<p>不过，我们同时推荐使用文本编辑器来学习 HTML，比如 Notepad (PC)、TextEdit (Mac)、VisualStudio Code或Sublime
+						Text。我们相信，使用一款简单的文本编辑器是学习 HTML 的好方法。</p>
+				</div>
+				<div class="bkc">
+					<h2>一、记事本</h2>
+					<p>通过记事本，依照以下四步来创建您的第一张网页。</p>
+					<h3>步骤一：启动记事本</h3>
+					<p>如何启动记事本：</p>
+					<p>〓开始按钮→〓所有程序→〓附件→〓记事本</p>
+					<h3>步骤二：用记事本来编辑 HTML</h3>
+					<p>在记事本中键入 HTML 代码：</p>
+					<p><img src="./../img/html_editor_notepad.gif" alt="记事本" /></p>
+					<h3>步骤三：保存HTML</h3>
+					<p>在记事本的文件菜单选择“另存为”。</p>
+					<p>当您保存 HTML 文件时，既可以使用 .htm 也可以使用 .html 扩展名。两者没有区别，完全根据您的喜好。</p>
+					<p>在一个容易记忆的文件夹中保存这个文件，比如：MyHtml。</p>
+					<h3>步骤四：在浏览器中运行这个 HTML 文件</h3>
+					<p>启动您的浏览器，然后选择“文件”菜单的“打开文件”命令，或者直接在文件夹中双击您的 HMTL 文件。</p>
+					<p>结果应该类似这样：</p>
+					<p><img src="./../img/html_editor_ie.gif" title="在浏览器中查看" /></p>
+				</div>
+				<div class="bkc">
+					<h2>二、VisualStudio Code</h2>
+					<p>Visual Studio Code（简称 VS Code）是一个由微软开发，同时支持 Windows 、 Linux 和 macOS
+						等操作系统且开放源代码的代码编辑器，编辑器中内置了扩展程序管理的功能。</p>
+					<p><span>VS Code官网：</span><a href="https://code.visualstudio.com/"
+							title="VisualStudio Code">https://code.visualstudio.com/</a></p>
+					<p>你可以从VisualStudio Code的官网中下载对应的软件，按步骤安装即可。</p>
+					<p>接下来我们将为大家演示如何使用 VS Code 工具来创建 HTML 文件，其他工具操作步骤类似。</p>
+					<h3>步骤一：新建HTML文件</h3>
+					<p>在 VS Code 安装完成->打开后，选择" 文件(F)->新建文件(N) "，在新建的文件中输入以下代码：</p>
+					<div class="codes">
+						<p class="p1">&lt;!DOCTYPE html&gt;</p>
+						<p class="p1">&lt;html&gt;</p>
+						<p class="p1">&lt;head&gt;</p>
+						<p class="p2">&lt;meat charset="utf-8" /&gt;</p>
+						<p class="p2">&lt;title&gt;HTML教程&lt;/title&gt;</p>
+						<p class="p1">&lt;/head&gt;</p>
+						<p class="p1">&lt;body&gt;</p>
+						<p class="p2">&lt;h1&gt;我是第一个标题&lt;/h1&gt;</p>
+						<p class="p2">&lt;p&gt;我是第一个段落。&lt;/p&gt;</p>
+						<p class="p1">&lt;/body&gt;</p>
+						<p class="p1">&lt;/html&gt;</p>
+					</div>
+					<img src="./../img/html_编辑器_01.jpg" />
+					<h3>步骤2：另存为HTML文件</h3>
+					<p>然后选择" 文件(F)->另存为(A) "，文件名为 runoob.html:</p>
+					<img src="./../img/html_编辑器_02.jpg" />
+					<p>当您保存 HTML 文件时，既可以使用 .htm 也可以使用 .html 扩展名。两者没有区别，完全根据您的喜好，我建议统一用 .html。
+						在一个容易记忆的文件夹中保存这个文件，比如:001</p>
+					<h3>步骤3：在浏览器中运行这个HTML文件</h3>
+					<P>然后鼠标右击编辑器上的文件名，选择在默认浏览器打开（也可以其他的浏览器）:</P>
+					<img src="./../img/html_编辑器_03.jpg" />
+					<p>显示结果类似如下：</p>
+					<img src="./../img/html_编辑器_04.jpg" />
+					<p class="pb">
+						VS Code 和 Sublime Text 还可以配合 Emmet 插件来提高编码速度。</br>
+						Emmet 官网：<a href="http://emmet.io/" title="Emmet官网">http://emmet.io/</a>
+					</p>
+				</div>
+			</div>
+			<!--上下翻页、目录-->
+			<div id="flipb" class="flip"></div>
+		</div>
+		<!--右边-->
+		<div id="right"></div>
+		<!--gotop-->
+		<div id="gotop"></div>
+		<!--网站声明-->
+		<div id="bottom" class="bottom"></div>
+	</div>
+</body>
+
+</html>
