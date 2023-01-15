@@ -1,0 +1,110 @@
+.bkname {
+    margin: 0px auto;
+    padding: 0px;
+    padding-top: 30px;
+    border: 0px solid #0f0;
+    border-bottom: 1px solid #9c9c9c;
+    width: calc(100% - 480px);
+    height: 60px;
+    background: transparent;
+    overflow: visible;
+}
+
+.bkname h1 {
+    margin: 0px auto;
+    padding: 0px;
+    border: 0px solid #f00;
+    width: calc(100% - 2px);
+    height: 60px;
+    line-height: 60px;
+    font: 50px "楷体";
+    color: #f00;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #f00;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #331b74;
+}
+
+a:active {
+    text-decoration: none;
+    color: #0f0;
+}
+
+.mCa,
+.mCb,
+.mCc,
+.mCd,
+.mCe,
+.mCf {
+    margin: 0px auto;
+    padding: 0px;
+    border: 0px solid #fff;
+    border-bottom: 1px solid #2c2c2c;
+    width: 100%;
+    height: 50px;
+    font: 30px "楷体";
+    color: #0f0;
+    line-height: 50px;
+    background: transparent;
+    float: left;
+}
+
+.mCa {
+    background: #000;
+}
+
+.mCb {
+    background: #000;
+}
+
+.mCc {
+    background: #000;
+}
+
+.mCaa,
+.mCba,
+.mCca,
+.mCda,
+.mCea,
+.mCfa {
+    margin: 0px auto;
+    border: 0px solid #fff;
+    width: 50px;
+    height: 50px;
+    font: 50px "楷体";
+    color: #0f0;
+    line-height: 50px;
+    text-align: center;
+    background: transparent;
+    float: left;
+}
+
+.mCaa {
+    padding-left: 0px;
+}
+
+.mCba {
+    padding-left: 50px;
+}
+
+.mCca {
+    padding-left: 100px;
+}
+
+.mCda {
+    padding-left: 150px;
+}
+
+.mSca,
+.mScb,
+.mScc,
+.mScd {
+    color: #112e50;
+}
